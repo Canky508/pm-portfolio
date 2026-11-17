@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#f7f4ee">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="谭倩琪的产品作品集：哒乐星 StarFun、挪啦、漫画学雅思、金灵酒鬼。记录从真实问题到产品落地的过程。">
+<meta name="description" content="谭倩琪的产品作品集：哒乐星 StarFun、挪啦、漫画学雅思、金灵酒鬼。4 个产品分别做了什么、关键指标与能力。">
 <title>谭倩琪 · 产品作品集 2026</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <meta property="og:title" content="谭倩琪 · 产品作品集 2026">
-<meta property="og:description" content="哒乐星、挪啦、漫画学雅思、金灵酒鬼：4 个从真实问题出发的产品，以及它们被验证到什么程度。">
+<meta property="og:description" content="哒乐星、挪啦、漫画学雅思、金灵酒鬼：4 个产品、2,600+ 用户、10% 付费转化、48h MVP。">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://canky508.github.io/pm-portfolio/assets/og.png">
 <style>
@@ -135,6 +135,21 @@
   .index-strip .st{display:inline-flex;align-items:center;gap:5px;font-size:9.5px;letter-spacing:.05em;color:var(--accent);font-weight:600}
   .index-strip .st::before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}
 
+
+  .hero-stats{display:flex;flex-wrap:wrap;gap:22px 36px;margin-top:30px}
+  .hero-stats b{display:block;font-family:var(--serif);font-size:clamp(26px,3.2vw,38px);line-height:1.05;letter-spacing:-.02em}
+  .hero-stats span{display:block;font-size:10.5px;color:var(--muted);margin-top:5px;letter-spacing:.02em}
+  .metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .metric{border-top:2px solid var(--accent);padding-top:10px}
+  .metric b{display:block;font-family:var(--serif);font-size:clamp(24px,2.8vw,34px);line-height:1.1;letter-spacing:-.02em;white-space:nowrap}
+  .metric span{display:block;font-size:10px;line-height:1.55;color:var(--muted);margin-top:5px}
+  .do-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  .do-list li{position:relative;padding-left:16px;font-size:12.8px;line-height:1.85;color:var(--ink-2)}
+  .do-list li::before{content:"";position:absolute;left:0;top:.78em;width:6px;height:1.5px;background:var(--accent)}
+  .skill-line{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
+  .skill-line span{font-size:10.5px;border:1px solid var(--line);border-radius:999px;padding:4px 9px;color:var(--muted);background:rgba(255,255,255,.45)}
+  @media(max-width:720px){.hero-stats{gap:16px 26px}.metric-grid{grid-template-columns:repeat(3,1fr);gap:8px}.metric b{font-size:24px}}
+
   /* ---------- method ---------- */
   .method{padding:clamp(54px,7vw,92px) 0 clamp(30px,4vw,46px)}
   .method-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:40px;align-items:end;margin-bottom:44px}
@@ -156,6 +171,20 @@
   .matrix-row b{font-size:12.5px;display:flex;align-items:center;gap:8px}
   .matrix-row b i{width:6px;height:6px;border-radius:50%;background:var(--c,var(--ink));font-style:normal}
   .matrix-row .ev{color:var(--muted);font-size:11.5px;line-height:1.7}
+
+
+  .case-metrics{margin:0 0 26px;padding:16px 0 18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .case-metrics .metric-grid{grid-template-columns:repeat(3,1fr);gap:20px}
+  .case-metrics .metric{border-top:0;padding-top:0}
+  .case-metrics .metric b{font-size:clamp(30px,3.6vw,46px)}
+  .case-metrics .metric span{font-size:11px}
+  @media(max-width:720px){
+    .case-metrics{margin-bottom:20px;padding:14px 0}
+    .case-metrics .metric-grid{gap:10px}
+    .case-metrics .metric b{font-size:30px}
+    .block{grid-template-columns:1fr;gap:8px}
+    .block h3{margin:0}
+  }
 
   /* ---------- case ---------- */
   .case{position:relative;padding:clamp(54px,7vw,96px) 0 clamp(40px,5vw,64px);border-top:1px solid var(--line);scroll-margin-top:74px;overflow:hidden}
@@ -353,6 +382,7 @@
     .reveal{opacity:1;transform:none;transition:none}
     *{animation-duration:.001ms!important;transition-duration:.001ms!important}
   }
+@media(max-width:720px){.block{grid-template-columns:1fr!important;gap:8px}.block h3{margin:0}}
 </style>
 </head>
 <body>
@@ -368,7 +398,7 @@
       <a href="#nuola" data-nav="nuola">挪啦</a>
       <a href="#yaya" data-nav="yaya">漫画学雅思</a>
       <a href="#jinling" data-nav="jinling">金灵酒鬼</a>
-      <a href="#about" data-nav="about">关于我</a>
+      <a href="#about" data-nav="about">能力</a>
     </nav>
     <div class="top-actions">
       <button class="icon-btn" type="button" data-qr aria-label="显示本页二维码" title="扫码查看">⌗</button>
@@ -386,128 +416,56 @@
       <div class="hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow">PRODUCT PORTFOLIO · 2026</p>
-          <h1>把真实的需求，<br>做成<span class="hl">能用</span>的产品。</h1>
-          <p class="lede">我是谭倩琪，南京大学企业管理硕士在读。做过校园社交、短信提醒工具、英语学习小程序，也在 48 小时黑客松里把「AI 调酒」做成了可演示的产品。</p>
-          <p class="lede">这不是一面截图墙。每个产品我都写了：看到的问题、当时的判断、做过的取舍，以及最后被验证到什么程度。</p>
-          <div class="hero-actions">
-            <a class="btn" href="#starfun">看 4 个产品 <span class="arw">↓</span></a>
-            <a class="btn ghost" href="#about">关于我的产品方法</a>
+          <h1>把需求，<br>做成<span class="hl">能上线</span>的产品。</h1>
+          <p class="lede">我是谭倩琪，产品经理 / AI 产品经理<br>南京大学企业管理硕士在读。不太会画饼，比较擅长把东西做出来。</p>
+          <div class="hero-stats">
+            <div><b>4</b><span>个从 0 到 1 的产品</span></div>
+            <div><b>2,600+</b><span>累计用户</span></div>
+            <div><b>10%</b><span>付费转化率</span></div>
+            <div><b>48h</b><span>最快 MVP</span></div>
           </div>
-          <div class="hero-meta">
-            <span><i class="dot"></i> 正在寻找产品经理 / AI 产品经理机会</span>
-            <span>南京 · 南京大学</span>
-            <span>4 个从 0 到 1 的产品</span>
+          <div class="hero-actions">
+            <a class="btn" href="#starfun">看我做的 <span class="arw">↓</span></a>
+            <a class="btn ghost" href="mailto:TQQ14706849844@163.com">联系我</a>
           </div>
         </div>
 
         <aside class="hero-side reveal">
           <div class="qr-card">
             <img src="assets/qr-site.svg" alt="本页二维码">
-            <b>扫码在手机上看</b>
-            <small>面试时可以直接扫码，<br>或把这一页转发给面试官。</small>
-            <button class="btn ghost small copy" type="button" data-copy>复制页面链接</button>
-          </div>
-          <div class="hero-note">
-            <b>3 分钟路线：</b>先看 4 个产品卡片，任选一个读「判断 + 取舍」，最后打开漫画学雅思的可交互原型。
+            <b>扫码打开作品集</b>
+            <small>手机看，排版更顺眼</small>
+            <button class="btn ghost small copy" type="button" data-copy>复制链接</button>
           </div>
         </aside>
       </div>
 
       <nav class="index-strip" aria-label="产品索引">
         <ol>
-          <li>
-            <a href="#starfun" style="--accent:var(--starfun)">
-              <span class="no">01 / SOCIAL</span>
-              <span class="nm">哒乐星 StarFun <span>↘</span></span>
-              <span class="tg">校园搭子社交 · LBS + 活动</span>
-              <span class="st">蒲公英内测</span>
-            </a>
-          </li>
-          <li>
-            <a href="#nuola" style="--accent:var(--nuola)">
-              <span class="no">02 / TOOL</span>
-              <span class="nm">挪啦 <span>↘</span></span>
-              <span class="tg">重要短信提醒 · Android</span>
-              <span class="st">已上架 · 2,600+ 用户</span>
-            </a>
-          </li>
-          <li>
-            <a href="#yaya" style="--accent:var(--yaya)">
-              <span class="no">03 / LEARNING</span>
-              <span class="nm">漫画学雅思 <span>↘</span></span>
-              <span class="tg">连续漫画 + 四维训练 · 小程序</span>
-              <span class="st">可交互原型</span>
-            </a>
-          </li>
-          <li>
-            <a href="#jinling" style="--accent:var(--jl)">
-              <span class="no">04 / AI</span>
-              <span class="nm">金灵酒鬼 <span>↘</span></span>
-              <span class="tg">AI 识酒 · 调酒 · 配菜 · 组局</span>
-              <span class="st">48h 黑客松 MVP</span>
-            </a>
-          </li>
+          <li><a href="#starfun" style="--accent:var(--starfun)"><span class="no">01 / SOCIAL</span><span class="nm">哒乐星 StarFun <span>↘</span></span><span class="tg">4 个主 Tab · 9 项真机验收</span><span class="st">内测可下载</span></a></li>
+          <li><a href="#nuola" style="--accent:var(--nuola)"><span class="no">02 / TOOL</span><span class="nm">挪啦 <span>↘</span></span><span class="tg">2,600+ 用户 · 10% 付费转化</span><span class="st">安卓已上架</span></a></li>
+          <li><a href="#yaya" style="--accent:var(--yaya)"><span class="no">03 / LEARNING</span><span class="nm">漫画学雅思 <span>↘</span></span><span class="tg">7 个页面 · 49 个单测</span><span class="st">H5 原型</span></a></li>
+          <li><a href="#jinling" style="--accent:var(--jl)"><span class="no">04 / AI</span><span class="nm">金灵酒鬼 <span>↘</span></span><span class="tg">48h · 4 段流程</span><span class="st">在线试玩</span></a></li>
         </ol>
       </nav>
     </div>
   </section>
 
-  <section class="method" id="method">
+  <section class="method" id="about">
     <div class="wrap">
       <div class="method-head reveal">
-        <div>
-          <p class="eyebrow">HOW I WORK</p>
-          <h2>先把问题问对，<br>再用最小闭环验证。</h2>
-        </div>
-        <p>我不太相信「先画完所有页面再找用户」。更有效的顺序是：找到一个真实卡点，做一条能跑通的主路径，尽快让真实的人用起来，再补边界。</p>
+        <div><p class="eyebrow">CAPABILITIES</p><h2>能力与证据</h2></div>
+        <p>5 项能力，对应 4 个真做过的产品。</p>
       </div>
-
-      <div class="method-grid">
-        <div class="method-card reveal">
-          <div class="n">01</div>
-          <h3>找真问题</h3>
-          <p>问卷、访谈、竞品和场景拆解一起用。不把「用户说要一个功能」直接当需求，而是追到他真正想完成的事。</p>
-          <em>证据：哒乐星需求调研 / 漫画学雅思用户定位</em>
-        </div>
-        <div class="method-card reveal">
-          <div class="n">02</div>
-          <h3>收敛最小闭环</h3>
-          <p>先跑通一条主路径，再补异常和边界。把规则、状态和失败路径写进产品，而不是留给开发临场决定。</p>
-          <em>证据：挪啦双触发 / 哒乐星举报处置 / 芽芽 ADR</em>
-        </div>
-        <div class="method-card reveal">
-          <div class="n">03</div>
-          <h3>用证据说话</h3>
-          <p>每个阶段都要有可检查的产出：可点原型、真机安装包、应用商店上架、用户数、自动化测试。</p>
-          <em>证据：上架、内测包、49 个单测、48h Demo</em>
-        </div>
+      <div class="matrix reveal" role="table" aria-label="能力与证据">
+        <div class="matrix-row head" role="row"><span>能力</span><span>对应产出</span><span>量化结果</span></div>
+        <div class="matrix-row" role="row" style="--c:var(--starfun)"><b><i></i>用户研究</b><span>哒乐星校园搭子调研、漫画学雅思考生定位</span><span class="ev">4 个产品均从具体用户场景切入</span></div>
+        <div class="matrix-row" role="row" style="--c:var(--yaya)"><b><i></i>产品规划</b><span>MVP 范围、版本拆解、需求文档</span><span class="ev">12 条 ADR</span></div>
+        <div class="matrix-row" role="row" style="--c:var(--starfun)"><b><i></i>交互原型</b><span>App / 小程序 / Web 原型</span><span class="ev">7 页小程序 · 4 Tab App</span></div>
+        <div class="matrix-row" role="row" style="--c:var(--jl)"><b><i></i>AI 应用</b><span>人格设定、提示词、失败降级</span><span class="ev">48h 完成 AI MVP</span></div>
+        <div class="matrix-row" role="row" style="--c:var(--nuola)"><b><i></i>上线与运营</b><span>安卓上架、软著 / 备案、推广与转化复盘</span><span class="ev">2,600+ 用户 · 10% 付费 · 9 项真机验收</span></div>
       </div>
-
-      <div class="matrix reveal" role="table" aria-label="四个产品验证到哪一步">
-        <div class="matrix-row head" role="row">
-          <span>产品</span><span>验证到哪一步</span><span>可检查的证据</span>
-        </div>
-        <div class="matrix-row" role="row" style="--c:var(--starfun)">
-          <b><i></i>哒乐星</b>
-          <span>复杂社交产品从 0 到内测</span>
-          <span class="ev">4 个主 Tab + 发布 · 认证 / 举报 / 群聊 · 多轮真机验收</span>
-        </div>
-        <div class="matrix-row" role="row" style="--c:var(--nuola)">
-          <b><i></i>挪啦</b>
-          <span>需求成立 + 分发跑通</span>
-          <span class="ev">Android 上架 · 2,600+ 用户 · 付费转化 10% · 软著 / 备案</span>
-        </div>
-        <div class="matrix-row" role="row" style="--c:var(--yaya)">
-          <b><i></i>漫画学雅思</b>
-          <span>学习闭环可运行</span>
-          <span class="ev">7 个页面 · 49 个单测 · 14 步冒烟 · 1.8MB 包体</span>
-        </div>
-        <div class="matrix-row" role="row" style="--c:var(--jl)">
-          <b><i></i>金灵酒鬼</b>
-          <span>AI 体验可演示</span>
-          <span class="ev">48 小时 · 4 段完整流程 · GitHub 开源</span>
-        </div>
-      </div>
+      <div class="tools reveal"><span>HTML / CSS</span><span>微信开发者工具</span><span>React Native</span><span>AI 编程</span><span>数据分析</span></div>
     </div>
   </section>
 
@@ -518,87 +476,52 @@
         <div class="reveal">
           <div class="case-kicker"><span class="case-no">01</span><span class="case-cat">CAMPUS SOCIAL · ANDROID</span></div>
           <h2>哒乐星 StarFun</h2>
-          <p class="case-tagline">大学生找搭子，<b>不该靠群里刷屏。</b></p>
+          <p class="case-tagline">找搭子，不靠群里刷屏。<b>从 0 到内测。</b></p>
           <div class="status" style="margin-top:16px">蒲公英内测 · 可直接下载</div>
         </div>
         <div class="case-meta reveal">
           <div><small>身份</small><b>项目发起人 / 产品负责人</b></div>
           <div><small>时间</small><b>2025 — 至今</b></div>
-          <div><small>关键词</small><b>LBS · 社区 · 信任机制</b></div>
           <div><small>团队</small><b>产品 / 设计 / 开发协作</b></div>
+          <div><small>关键词</small><b>LBS · 社区 · 信任机制</b></div>
         </div>
       </header>
-
+      <div class="case-metrics reveal"><div class="metric-grid">
+            <div class="metric"><b>4</b><span>主 Tab + 发布</span></div>
+            <div class="metric"><b>4</b><span>核心模块</span></div>
+            <div class="metric"><b>9</b><span>项真机验收</span></div>
+          </div>
+          </div>
       <div class="case-body">
         <div class="case-text reveal">
-          <div class="block">
-            <h3>问题</h3>
-            <p>想找人打一场球、去图书馆自习，发在群里常常没人回；表白墙的信息又很快沉底。陌生人组局，还多了一层「靠不靠谱」的顾虑。</p>
-          </div>
-          <div class="block">
-            <h3>判断</h3>
-            <p>缺的不是又一个信息流，而是一个「低压力发起 + 可验证身份」的线下组局入口。地图解决「现在附近有谁」，活动解决「这周末做什么」。</p>
-          </div>
-          <div class="block">
-            <h3>我做的</h3>
-            <ul class="clean">
-              <li>用户调研与场景拆解，收敛出「找搭子」「组活动」双核心场景</li>
-              <li>设计地图、广场、消息、我的 4 个主 Tab 与发布入口：地图发现 → 发布 → 报名 → 群聊</li>
-              <li>把实名 / 学校认证、信用与举报处置做成产品规则，而不只是协议文案</li>
-              <li>跟开发做版本拆解、真机验收，并推进官网、备案、软著与上架材料</li>
+          <div class="block"><h3>我做了什么</h3>
+            <ul class="do-list">
+              <li>把「找搭子 + 组活动」拆成双场景，做了 4 个主 Tab + 发布入口</li>
+              <li>把账号、认证、群聊、举报 4 个模块从 0 拧到能用</li>
+              <li>实名 / 学校认证 + 信用机制，让陌生人组局不只靠运气</li>
+              <li>推进 Android 内测、官网、备案 / 软著，真机验收也磨了多轮</li>
             </ul>
           </div>
+          <div class="skill-line"><span>需求分析</span><span>信息架构</span><span>交互原型</span><span>合规与上线</span></div>
         </div>
-
         <div class="reveal">
-          <div class="decision-box">
-            <h3>关键设计与取舍</h3>
-            <div class="decision">
-              <span class="dn">01</span>
-              <div><b>双入口，而不是单信息流</b><p>地图承接即时需求，活动承接计划性需求；两者共用一套报名和群聊链路。</p></div>
-            </div>
-            <div class="decision">
-              <span class="dn">02</span>
-              <div><b>认证分层，避免首屏劝退</b><p>先可浏览，再轻认证，关键动作前完成学校 / 实名认证，把信任成本放在正确的时刻。</p></div>
-            </div>
-            <div class="decision">
-              <span class="dn">03</span>
-              <div><b>把「信任」写进流程</b><p>举报 → 处置 → 复核 → 通知，每一步都有状态、责任人和出口，而不是一句「审核中」。</p></div>
-            </div>
-          </div>
-
-          <div class="outcome">
-            <h3>结果</h3>
-            <p>产品已走到可安装的 Android 内测阶段，完成账号、认证、群聊、举报等模块，并经过多轮真机验收。</p>
-            <div class="chips">
-              <span class="chip">4 个主 Tab + 发布</span><span class="chip">多轮真机验收</span><span class="chip">官网已上线</span><span class="chip">备案 / 软著 / 安全评估</span>
-            </div>
-          </div>
-
-          <div class="reflection">
-            <h3>复盘</h3>
-            <p>社交产品最难的从来不是把功能做出来，而是让用户敢迈出第一步。下一步我会把注意力放在「首场活动的成功率」，而不是日活数字。</p>
-          </div>
-
           <div class="case-links">
             <a class="btn small" href="demo/starfun/index.html" target="_blank" rel="noopener">打开交互原型 <span class="arw">↗</span></a>
-            <a class="btn ghost small" href="https://www.pgyer.com/dalexing" target="_blank" rel="noopener">立即下载体验</a>
-            <a class="btn ghost small" href="https://dalexing-starfun.site" target="_blank" rel="noopener">访问产品官网</a>
-            <p class="case-note">原型为可交互 H5 版本，手机打开后可直接拖动地图、切换 Tab、筛选搭子。</p>
+            <a class="btn ghost small" href="https://www.pgyer.com/dalexing" target="_blank" rel="noopener">立即下载</a>
+            <a class="btn ghost small" href="https://dalexing-starfun.site" target="_blank" rel="noopener">官网</a>
           </div>
         </div>
       </div>
-
-      <div class="gallery-head reveal">
-        <div><h3>界面与流程</h3><p>来自交互原型的真实界面：地图、活动、消息、我的与筛选。</p></div>
+<div class="gallery-head reveal">
+        <div><h3>界面</h3><p>地图、广场、消息、我的与筛选。</p></div>
         <div class="gallery-nav"><button class="icon-btn" type="button" data-scroll="-1" aria-label="向左看">←</button><button class="icon-btn" type="button" data-scroll="1" aria-label="向右看">→</button></div>
       </div>
       <div class="gallery reveal" data-gallery>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-map.webp" alt="哒乐星地图找搭子界面" loading="lazy"></div><figcaption><b>地图</b> 附近的人与活动，一眼可见</figcaption></figure>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-square.webp" alt="哒乐星校园活动界面" loading="lazy"></div><figcaption><b>广场</b> 校园活动与动态，按时间筛选</figcaption></figure>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-messages.webp" alt="哒乐星消息界面" loading="lazy"></div><figcaption><b>消息</b> 待处理、报名进展与会话</figcaption></figure>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-profile.webp" alt="哒乐星个人主页界面" loading="lazy"></div><figcaption><b>我的</b> 认证、兴趣与内容记录</figcaption></figure>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-filter.webp" alt="哒乐星筛选搭子界面" loading="lazy"></div><figcaption><b>筛选</b> 按时间、距离、兴趣找搭子</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-map.webp" alt="哒乐星地图找搭子界面" width="780" height="1600" loading="lazy"></div><figcaption><b>地图</b> 附近的人与活动，一眼可见</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-square.webp" alt="哒乐星校园活动界面" width="780" height="1600" loading="lazy"></div><figcaption><b>广场</b> 校园活动与动态，按时间筛选</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-messages.webp" alt="哒乐星消息界面" width="780" height="1600" loading="lazy"></div><figcaption><b>消息</b> 待处理、报名进展与会话</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-profile.webp" alt="哒乐星个人主页界面" width="780" height="1600" loading="lazy"></div><figcaption><b>我的</b> 认证、兴趣与内容记录</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-filter.webp" alt="哒乐星筛选搭子界面" width="780" height="1600" loading="lazy"></div><figcaption><b>筛选</b> 按时间、距离、兴趣找搭子</figcaption></figure>
       </div>
     </div>
   </article>
@@ -610,85 +533,50 @@
         <div class="reveal">
           <div class="case-kicker"><span class="case-no">02</span><span class="case-cat">UTILITY · ANDROID</span></div>
           <h2>挪啦</h2>
-          <p class="case-tagline">重要短信，<b>不该被 99+ 淹没。</b></p>
+          <p class="case-tagline">重要短信，别再被划走。<b>已上架、有人付费。</b></p>
           <div class="status" style="margin-top:16px">Android 已上架 · 2,600+ 用户</div>
         </div>
         <div class="case-meta reveal">
           <div><small>身份</small><b>联合发起人 / 产品</b></div>
-          <div><small>时间</small><b>2026.02 上架</b></div>
-          <div><small>关键词</small><b>效率工具 · 通知 · 上架</b></div>
-          <div><small>结果</small><b>2,600+ 累计用户</b></div>
+          <div><small>上架</small><b>2026.02</b></div>
+          <div><small>关键词</small><b>工具 · 通知 · 上架</b></div>
+          <div><small>渠道</small><b>多安卓商店</b></div>
         </div>
       </header>
-
+      <div class="case-metrics reveal"><div class="metric-grid">
+            <div class="metric"><b>2,600+</b><span>累计用户</span></div>
+            <div class="metric"><b>10%</b><span>付费转化率</span></div>
+            <div class="metric"><b>6+</b><span>关键词场景模板</span></div>
+          </div>
+          </div>
       <div class="case-body">
         <div class="case-text reveal">
-          <div class="block">
-            <h3>问题</h3>
-            <p>违停挪车、工单、航班变更这些短信，经常被 99+ 的消息淹没。用户不是没看到，而是没意识到它重要——等发现时，损失已经发生。</p>
-          </div>
-          <div class="block">
-            <h3>判断</h3>
-            <p>把「所有通知」做成降噪不现实。更小、更可控的切口是：让用户自己定义「什么算重要」，再用足够强的提醒把这条信息送到他面前。</p>
-          </div>
-          <div class="block">
-            <h3>我做的</h3>
-            <ul class="clean">
-              <li>定义「关键词 + 发件号码」双触发规则，覆盖违停、工作、家人、灾害等场景</li>
-              <li>设计全屏弹窗 + 铃声 / 震动 + 最近提醒记录的完整提醒链路</li>
-              <li>做权限引导与使用帮助，降低监测开启门槛，减少「装了但没开」</li>
-              <li>负责软著、隐私、上架材料与多渠道推广，把产品真正送到用户手里</li>
+          <div class="block"><h3>我做了什么</h3>
+            <ul class="do-list">
+              <li>把「关键词 + 号码」做成双触发，覆盖 6+ 场景</li>
+              <li>全屏弹窗 + 铃声 / 震动 + 提醒记录，专治「看了一眼就划走」</li>
+              <li>权限引导做到位，减少「装了但没开」的电子摆设</li>
+              <li>软著 / 隐私 / 上架材料 + 多渠道推广，一条龙</li>
             </ul>
           </div>
+          <div class="skill-line"><span>需求定义</span><span>规则设计</span><span>上架合规</span><span>渠道运营</span></div>
         </div>
-
         <div class="reveal">
-          <div class="decision-box">
-            <h3>关键设计与取舍</h3>
-            <div class="decision">
-              <span class="dn">01</span>
-              <div><b>用户自定义，而不是平台猜</b><p>重要与否交给用户设置关键词和号码，减少误判，也降低隐私解释成本。</p></div>
-            </div>
-            <div class="decision">
-              <span class="dn">02</span>
-              <div><b>强提醒，但必须可退出</b><p>全屏预警配明确的关闭与「停止监测」路径，避免工具变成打扰。</p></div>
-            </div>
-            <div class="decision">
-              <span class="dn">03</span>
-              <div><b>用一个高频场景做传播</b><p>先打「违停挪车」这个强需求瞬间，再扩展到工作、家人与灾害预警。</p></div>
-            </div>
-          </div>
-
-          <div class="outcome">
-            <h3>结果</h3>
-            <p>2026 年 2 月安卓应用商店上架，累计用户突破 2,600，付费转化率 10%；完成软著、备案与多商店素材，关键词模板覆盖多个真实场景。</p>
-            <div class="chips">
-              <span class="chip">Android 上架</span><span class="chip">2,600+ 用户</span><span class="chip">付费转化率 10%</span><span class="chip">软著 / 备案</span><span class="chip">多商店素材</span>
-            </div>
-          </div>
-
-          <div class="reflection">
-            <h3>复盘</h3>
-            <p>工具产品的增长不是靠功能列表，而是靠一个「被需要」的瞬间。挪车短信就是那个瞬间；下一步要把「第一次设置」的成功率做得更高。</p>
-          </div>
-
           <div class="case-links">
             <a class="btn small" href="https://m.malink.cn/s/Ebyqiu" target="_blank" rel="noopener">安卓下载体验 <span class="arw">↗</span></a>
-            <a class="btn ghost small" href="#nuola-gallery">看界面</a>
           </div>
         </div>
       </div>
-
-      <div class="gallery-head reveal" id="nuola-gallery">
-        <div><h3>界面与提醒链路</h3><p>自定义关键词，到全屏预警——每一步都为「别错过」服务。</p></div>
+<div class="gallery-head reveal" id="nuola-gallery">
+        <div><h3>界面</h3><p>关键词配置 → 全屏预警。</p></div>
         <div class="gallery-nav"><button class="icon-btn" type="button" data-scroll="-1" aria-label="向左看">←</button><button class="icon-btn" type="button" data-scroll="1" aria-label="向右看">→</button></div>
       </div>
       <div class="gallery reveal" data-gallery>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-2.webp" alt="挪啦监测首页" loading="lazy"></div><figcaption><b>首页</b> 开启监测，持续守护</figcaption></figure>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-5.webp" alt="挪啦关键词管理界面" loading="lazy"></div><figcaption><b>关键词</b> 生意、面试、医保等重要场景</figcaption></figure>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-4.webp" alt="挪啦家人和紧急关键词界面" loading="lazy"></div><figcaption><b>关键词</b> 家人、警报、紧急通知</figcaption></figure>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-3.webp" alt="挪啦工作场景关键词界面" loading="lazy"></div><figcaption><b>关键词</b> 工单、换班、VIP 客户</figcaption></figure>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-6.webp" alt="挪啦全屏弹窗预警" loading="lazy"></div><figcaption><b>预警</b> 全屏弹窗 + 高分贝铃声</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-2.webp" alt="挪啦监测首页" width="900" height="1600" loading="lazy"></div><figcaption><b>首页</b> 开启监测，持续守护</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-5.webp" alt="挪啦关键词管理界面" width="900" height="1600" loading="lazy"></div><figcaption><b>关键词</b> 生意、面试、医保等重要场景</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-4.webp" alt="挪啦家人和紧急关键词界面" width="900" height="1600" loading="lazy"></div><figcaption><b>关键词</b> 家人、警报、紧急通知</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-3.webp" alt="挪啦工作场景关键词界面" width="900" height="1600" loading="lazy"></div><figcaption><b>关键词</b> 工单、换班、VIP 客户</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-6.webp" alt="挪啦全屏弹窗预警" width="900" height="1600" loading="lazy"></div><figcaption><b>预警</b> 全屏弹窗 + 高分贝铃声</figcaption></figure>
       </div>
     </div>
   </article>
@@ -700,7 +588,7 @@
         <div class="reveal">
           <div class="case-kicker"><span class="case-no">03</span><span class="case-cat">LEARNING · WECHAT MINI PROGRAM</span></div>
           <h2>漫画学雅思 <span style="font-size:.42em;letter-spacing:0;color:var(--muted);font-family:var(--sans);font-weight:500">/ 芽芽英语</span></h2>
-          <p class="case-tagline">不急着背单词，<b>先读懂一个故事。</b></p>
+          <p class="case-tagline">不先背单词，先读故事。<b>把阅读做成闭环。</b></p>
           <div class="status" style="margin-top:16px">微信小程序 v0.4 · H5 原型可体验</div>
         </div>
         <div class="case-meta reveal">
@@ -710,76 +598,42 @@
           <div><small>阶段</small><b>框架完成 · 补内容中</b></div>
         </div>
       </header>
-
+      <div class="case-metrics reveal"><div class="metric-grid">
+            <div class="metric"><b>7</b><span>个页面</span></div>
+            <div class="metric"><b>49</b><span>个单测</span></div>
+            <div class="metric"><b>1.8MB</b><span>小程序包体</span></div>
+          </div>
+          </div>
       <div class="case-body">
         <div class="case-text reveal">
-          <div class="block">
-            <h3>问题</h3>
-            <p>5–6 分的考生往往单词背了不少，但读长句还是慢，读完记不住。传统背单词产品把词从语境里抽走，迁移不到阅读。</p>
-          </div>
-          <div class="block">
-            <h3>判断</h3>
-            <p>提分的关键不是词汇量，而是「在语境中快速识别词块」。漫画提供连续情境、人物和情绪，能让一个表达被记住更久，也更愿意读下去。</p>
-          </div>
-          <div class="block">
-            <h3>我做的</h3>
-            <ul class="clean">
-              <li>用户与竞品调研，确定「漫画阅读 → 四维训练 → 延迟复习」的学习闭环</li>
-              <li>写 MVP 规格与 12 条 ADR，完成 7 个页面与可点击原型</li>
-              <li>设计 5 张分镜 / 10 句对白 / 6 个目标表达的内容结构</li>
-              <li>组织开发与验收：49 个单测、14 步自动化冒烟、1.8MB 包体</li>
+          <div class="block"><h3>我做了什么</h3>
+            <ul class="do-list">
+              <li>调研后定下「阅读 → 四维训练 → D1/D3/D7 复习」闭环</li>
+              <li>写 12 条 ADR，先把「不做什么」吵清楚，再做 7 个页面原型</li>
+              <li>5 张分镜 / 10 句对白 / 6 个目标表达，内容自己盯</li>
+              <li>49 个单测 + 14 步冒烟，把 1.8MB 的包稳稳送进开发者工具</li>
             </ul>
           </div>
+          <div class="skill-line"><span>学习产品设计</span><span>交互原型</span><span>内容结构</span><span>测试验收</span></div>
         </div>
-
         <div class="reveal">
-          <div class="decision-box">
-            <h3>关键设计与取舍</h3>
-            <div class="decision">
-              <span class="dn">01</span>
-              <div><b>一话只锁 6 个表达</b><p>少而深。按「表达 × 词义 / 拼写 / 搭配 / 阅读」记录掌握度，不做过关式假掌握。</p></div>
-            </div>
-            <div class="decision">
-              <span class="dn">02</span>
-              <div><b>点气泡 = 单句播放 + 中文</b><p>把「听不懂」拆成可重试的小步骤；长难句只在角落给低干扰入口，不打断阅读。</p></div>
-            </div>
-            <div class="decision">
-              <span class="dn">03</span>
-              <div><b>首版零第三方 SDK、零埋点</b><p>先验证学习闭环，再谈增长和商业化。数据只存本机，降低合规与信任成本。</p></div>
-            </div>
-          </div>
-
-          <div class="outcome">
-            <h3>结果</h3>
-            <p>已有一个可运行的原生小程序 v0.4 竖切片：从首页到复习完整跑通，并通过自动化质量链；目前待真机与审核。</p>
-            <div class="chips">
-              <span class="chip">7 个页面</span><span class="chip">49 个单测</span><span class="chip">14 步冒烟</span><span class="chip">1.8MB 包体</span>
-            </div>
-          </div>
-
-          <div class="reflection">
-            <h3>复盘</h3>
-            <p>学习产品最大的诱惑是不断加内容。我用 ADR 把「不做什么」写下来：先让一话被读完、被复习，再谈六话和付费。</p>
-          </div>
-
           <div class="case-links">
-            <a class="btn small" href="demo/yaya/index.html" target="_blank" rel="noopener">打开 H5 交互原型 <span class="arw">↗</span></a>
-            <a class="btn ghost small" href="https://github.com/Canky508/comic-ielts" target="_blank" rel="noopener">项目说明 / 源码</a>
-            <p class="case-note">小程序框架与主流程已完成，正在补内容与审核。微信小程序需发布后才能在微信内打开；这里展示的是同流程 H5 原型。</p>
+            <a class="btn small" href="demo/yaya/index.html" target="_blank" rel="noopener">打开 H5 原型 <span class="arw">↗</span></a>
+            <a class="btn ghost small" href="https://github.com/Canky508/comic-ielts" target="_blank" rel="noopener">项目说明</a>
           </div>
+          <p class="case-note">小程序还在补内容、等审核；先看同流程 H5 原型。</p>
         </div>
       </div>
-
-      <div class="gallery-head reveal">
-        <div><h3>学习旅程</h3><p>手机打开原型是全屏体验；桌面打开是带设计说明的手机预览。</p></div>
+<div class="gallery-head reveal">
+        <div><h3>学习流程</h3><p>阅读 → 词义 → 搭配 → 复习。</p></div>
         <div class="gallery-nav"><button class="icon-btn" type="button" data-scroll="-1" aria-label="向左看">←</button><button class="icon-btn" type="button" data-scroll="1" aria-label="向右看">→</button></div>
       </div>
       <div class="gallery reveal" data-gallery>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-home.webp" alt="芽芽英语首页" loading="lazy"></div><figcaption><b>首页</b> 今天，和芽芽一起读懂一个故事</figcaption></figure>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-comic.webp" alt="芽芽英语漫画阅读页" loading="lazy"></div><figcaption><b>阅读</b> 点气泡听读，展开中文</figcaption></figure>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-meaning.webp" alt="芽芽英语词义训练页" loading="lazy"></div><figcaption><b>词义</b> 先猜义，再看解释</figcaption></figure>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-phrase.webp" alt="芽芽英语搭配训练页" loading="lazy"></div><figcaption><b>搭配</b> 把词块重新拼回来</figcaption></figure>
-        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-review.webp" alt="芽芽英语延迟复习页" loading="lazy"></div><figcaption><b>复习</b> D1 / D3 / D7 三档提示强度</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-home.webp" alt="芽芽英语首页" width="780" height="1688" loading="lazy"></div><figcaption><b>首页</b> 今天，和芽芽一起读懂一个故事</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-comic.webp" alt="芽芽英语漫画阅读页" width="780" height="1688" loading="lazy"></div><figcaption><b>阅读</b> 点气泡听读，展开中文</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-meaning.webp" alt="芽芽英语词义训练页" width="780" height="1688" loading="lazy"></div><figcaption><b>词义</b> 先猜义，再看解释</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-phrase.webp" alt="芽芽英语搭配训练页" width="780" height="1688" loading="lazy"></div><figcaption><b>搭配</b> 把词块重新拼回来</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-review.webp" alt="芽芽英语延迟复习页" width="780" height="1688" loading="lazy"></div><figcaption><b>复习</b> D1 / D3 / D7 三档提示强度</figcaption></figure>
       </div>
     </div>
   </article>
@@ -791,131 +645,73 @@
         <div class="reveal">
           <div class="case-kicker"><span class="case-no">04</span><span class="case-cat">AI · HACKATHON MVP</span></div>
           <h2>金灵酒鬼</h2>
-          <p class="case-tagline">拍一瓶酒，<b>AI 帮你识酒、调酒、配菜、组局。</b></p>
+          <p class="case-tagline">拍瓶酒，AI 帮你识酒、调酒、组局。<b>48h 做出 MVP。</b></p>
           <div class="status" style="margin-top:16px">抖音创变者黑客松 · 48h MVP</div>
         </div>
         <div class="case-meta reveal">
           <div><small>身份</small><b>队长 / 产品 + 前端</b></div>
-          <div><small>时间</small><b>2026.06 · 48 小时</b></div>
-          <div><small>关键词</small><b>AI 应用 · 人格化 · 降级</b></div>
+          <div><small>时间</small><b>2026.06 · 48h</b></div>
           <div><small>团队</small><b>2 人</b></div>
+          <div><small>关键词</small><b>AI 应用 · 人格化 · 降级</b></div>
         </div>
       </header>
-
+      <div class="case-metrics reveal"><div class="metric-grid">
+            <div class="metric"><b>48h</b><span>完成 MVP</span></div>
+            <div class="metric"><b>2</b><span>人团队</span></div>
+            <div class="metric"><b>4</b><span>段核心流程</span></div>
+          </div>
+          </div>
       <div class="case-body">
         <div class="case-text reveal">
-          <div class="block">
-            <h3>问题</h3>
-            <p>想喝点好的，但看不懂酒标、不会调、不会配菜；搜到的内容不是百科就是广告，看完仍然不知道今晚该怎么喝。</p>
-          </div>
-          <div class="block">
-            <h3>判断</h3>
-            <p>用户要的不是知识库，而是一个「懂酒的朋友」，在三分钟内给出一套能执行的方案：这瓶酒是什么、怎么调、配什么、怎么组局。</p>
-          </div>
-          <div class="block">
-            <h3>我做的</h3>
-            <ul class="clean">
-              <li>2 人团队 48 小时：需求收敛、信息架构、交互原型、前端与路演</li>
-              <li>定义「女调酒师」产品人格与语气边界，让 AI 输出稳定、可信任</li>
-              <li>设计识酒 → 调酒 → 配菜 → 酒局邀请的完整演示链路</li>
-              <li>做 AI 失败降级：接口不可用时自动切 Mock，保证现场演示不中断</li>
+          <div class="block"><h3>我做了什么</h3>
+            <ul class="do-list">
+              <li>2 人 48h，需求、信息架构、交互、前端、路演一把梭</li>
+              <li>先定「女调酒师」人设和说话边界，AI 才不至于满嘴跑火车</li>
+              <li>识酒 → 调酒 → 配菜 → 组局，4 段链路现场能讲完</li>
+              <li>接口一挂就自动切 Mock，演示不掉链子</li>
             </ul>
           </div>
+          <div class="skill-line"><span>AI 产品化</span><span>提示词</span><span>MVP 交付</span><span>路演</span></div>
         </div>
-
         <div class="reveal">
-          <div class="decision-box">
-            <h3>关键设计与取舍</h3>
-            <div class="decision">
-              <span class="dn">01</span>
-              <div><b>人格先行，再写提示词</b><p>先定义「她怎么说话」，再拆专业字段与个性表达；专业信息克制，语气统一。</p></div>
-            </div>
-            <div class="decision">
-              <span class="dn">02</span>
-              <div><b>演示优先，砍掉非核心</b><p>核心链路必须 3 分钟讲完；历史记录、复杂设置等全部让位于现场体验。</p></div>
-            </div>
-            <div class="decision">
-              <span class="dn">03</span>
-              <div><b>失败路径也是产品</b><p>AI 超时或识别失败时，给明确反馈并切换到可用结果，而不是空白或报错。</p></div>
-            </div>
-          </div>
-
-          <div class="outcome">
-            <h3>结果</h3>
-            <p>48 小时完成可演示的 Web MVP，覆盖识酒、调酒、配菜、酒局 4 段流程，并沉淀 MVP 需求书、部署文档与 GitHub 仓库。</p>
-            <div class="chips">
-              <span class="chip">48 小时</span><span class="chip">2 人团队</span><span class="chip">4 段流程</span><span class="chip">GitHub 开源</span>
-            </div>
-          </div>
-
-          <div class="reflection">
-            <h3>复盘</h3>
-            <p>黑客松教会我的不是「做得快」，而是「先决定不做什么」。如果重来，我会更早把「识酒准确率」的预期管理写进界面。</p>
-          </div>
-
           <div class="case-links">
             <a class="btn small" href="https://canky508.github.io/LIngruiz1hejiu/" target="_blank" rel="noopener">在线试玩 <span class="arw">↗</span></a>
-            <a class="btn ghost small" href="https://github.com/Canky508/LIngruiz1hejiu" target="_blank" rel="noopener">GitHub 仓库</a>
-            <a class="btn ghost small" href="#jinling-gallery">看演示界面</a>
+            <a class="btn ghost small" href="https://github.com/Canky508/LIngruiz1hejiu" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
       </div>
-
-      <div class="gallery-head reveal" id="jinling-gallery">
-        <div><h3>48 小时做出来的演示链路</h3><p>从一张酒标照片，到一张可以发出去的酒局邀请。</p></div>
+<div class="gallery-head reveal" id="jinling-gallery">
+        <div><h3>演示流程</h3><p>识酒 → 调酒 → 配菜 → 组局。</p></div>
         <div class="gallery-nav"><button class="icon-btn" type="button" data-scroll="-1" aria-label="向左看">←</button><button class="icon-btn" type="button" data-scroll="1" aria-label="向右看">→</button></div>
       </div>
       <div class="gallery reveal" data-gallery>
-        <figure class="shot"><div class="frame device"><span class="zoom-hint">＋</span><img src="assets/jl-home.webp" alt="金灵酒鬼首页" loading="lazy"></div><figcaption><b>首页</b> 拍一瓶酒，开始识酒</figcaption></figure>
-        <figure class="shot"><div class="frame device"><span class="zoom-hint">＋</span><img src="assets/jl-wine.webp" alt="金灵酒鬼识酒结果页" loading="lazy"></div><figcaption><b>识酒</b> 酒款信息、参考价与下一步</figcaption></figure>
-        <figure class="shot"><div class="frame device"><span class="zoom-hint">＋</span><img src="assets/jl-food.webp" alt="金灵酒鬼下酒菜页" loading="lazy"></div><figcaption><b>配菜</b> 三档下酒菜与搭配理由</figcaption></figure>
-        <figure class="shot"><div class="frame device"><span class="zoom-hint">＋</span><img src="assets/jl-share.webp" alt="金灵酒鬼酒局邀请页" loading="lazy"></div><figcaption><b>组局</b> 一键生成酒局邀请卡</figcaption></figure>
+        <figure class="shot"><div class="frame device"><span class="zoom-hint">＋</span><img src="assets/jl-home.webp" alt="金灵酒鬼首页" width="780" height="1688" loading="lazy"></div><figcaption><b>首页</b> 拍一瓶酒，开始识酒</figcaption></figure>
+        <figure class="shot"><div class="frame device"><span class="zoom-hint">＋</span><img src="assets/jl-wine.webp" alt="金灵酒鬼识酒结果页" width="780" height="1688" loading="lazy"></div><figcaption><b>识酒</b> 酒款信息、参考价与下一步</figcaption></figure>
+        <figure class="shot"><div class="frame device"><span class="zoom-hint">＋</span><img src="assets/jl-food.webp" alt="金灵酒鬼下酒菜页" width="780" height="1688" loading="lazy"></div><figcaption><b>配菜</b> 三档下酒菜与搭配理由</figcaption></figure>
+        <figure class="shot"><div class="frame device"><span class="zoom-hint">＋</span><img src="assets/jl-share.webp" alt="金灵酒鬼酒局邀请页" width="780" height="1688" loading="lazy"></div><figcaption><b>组局</b> 一键生成酒局邀请卡</figcaption></figure>
       </div>
     </div>
   </article>
 
   <!-- ================= about / contact ================= -->
-  <section class="ability" id="about">
-    <div class="wrap ability-grid">
-      <div class="reveal">
-        <p class="eyebrow">ABOUT ME</p>
-        <h2 class="section-title">想清楚，<br>再把它推上线。</h2>
-        <p class="lead">南京大学企业管理硕士在读，本科工商管理。做过用户研究、写过需求、画过原型，也跟开发一起排查真机问题、准备上架材料。我习惯把「为什么做」和「怎么验证」一起讲清楚。</p>
-        <div class="tools">
-          <span>用户访谈</span><span>问卷</span><span>竞品分析</span><span>MVP 范围</span><span>信息架构</span><span>交互原型</span><span>AI 协作</span><span>真机验收</span><span>上架材料</span>
-        </div>
-      </div>
-      <div class="skills reveal">
-        <div class="skill"><b>用户研究</b><span>哒乐星需求调研、漫画学雅思考生定位；从场景拆解到需求收敛。</span></div>
-        <div class="skill"><b>产品规划</b><span>MVP 范围、版本拆解、12 条 ADR；把「不做什么」写进文档。</span></div>
-        <div class="skill"><b>交互与原型</b><span>4 个产品原型：Web、小程序、App；从低保真到可点原型。</span></div>
-        <div class="skill"><b>AI 应用</b><span>提示词、人格设定、失败降级；用 AI 加速调研、原型与开发。</span></div>
-        <div class="skill"><b>落地协作</b><span>安卓上架、软著 / 备案、真机验收、跨角色推进。</span></div>
-        <div class="skill"><b>数据与运营</b><span>2,600+ 用户产品的渠道素材、推广与复盘。</span></div>
-      </div>
-    </div>
-  </section>
+  
 
   <section class="contact" id="contact">
     <div class="wrap contact-grid">
       <div class="reveal">
-        <p class="eyebrow">LET'S TALK</p>
-        <h2>如果你在找一个<br>既能把问题想清楚、<br>又能把它<span class="mark">推上线</span><br class="mob-only">的产品经理。</h2>
-        <p>我们可以聊聊。欢迎扫码看这一页，或直接邮件联系我；完整简历、项目文档和过程稿都可以另外发送。</p>
+        <p class="eyebrow">CONTACT</p>
+        <h2>来聊聊？</h2>
+        <p>正在找产品经理 / AI 产品经理机会。聊产品、聊 AI、聊怎么把想法落地，都欢迎。</p>
         <div class="contact-actions">
           <a class="btn" href="mailto:TQQ14706849844@163.com?subject=%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%B2%97%E4%BD%8D%E6%B2%9F%E9%80%9A">发邮件给我 <span class="arw">↗</span></a>
-          <button class="btn ghost" type="button" data-qr>扫码保存这一页</button>
+          <button class="btn ghost" type="button" data-qr>扫码保存</button>
         </div>
-        <div class="contact-info">
-          <span>TQQ14706849844@163.com</span>
-          <span>南京大学 · 企业管理硕士在读</span>
-          <span>求职方向：产品经理 / AI 产品经理</span>
-        </div>
+        <div class="contact-info"><span>TQQ14706849844@163.com</span><span>南京大学 · 企业管理硕士在读</span><span>产品经理 / AI 产品经理</span></div>
       </div>
       <div class="contact-card reveal">
         <img src="assets/qr-site.svg" alt="谭倩琪产品作品集二维码">
         <b>谭倩琪 · 产品作品集</b>
-        <small>扫码打开，适合面试现场展示<br>也可以保存到简历或邮件签名</small>
+        <small>扫码打开</small>
         <button class="btn ghost small copy" type="button" data-copy>复制链接</button>
       </div>
     </div>
@@ -938,7 +734,7 @@
       <a href="#nuola" style="padding:12px 0;border-bottom:1px solid var(--line);font-size:14px">02 挪啦 <span style="float:right;color:var(--muted)">↘</span></a>
       <a href="#yaya" style="padding:12px 0;border-bottom:1px solid var(--line);font-size:14px">03 漫画学雅思 <span style="float:right;color:var(--muted)">↘</span></a>
       <a href="#jinling" style="padding:12px 0;border-bottom:1px solid var(--line);font-size:14px">04 金灵酒鬼 <span style="float:right;color:var(--muted)">↘</span></a>
-      <a href="#about" style="padding:12px 0;border-bottom:1px solid var(--line);font-size:14px">关于我 <span style="float:right;color:var(--muted)">↘</span></a>
+      <a href="#about" style="padding:12px 0;border-bottom:1px solid var(--line);font-size:14px">能力 <span style="float:right;color:var(--muted)">↘</span></a>
       <a href="mailto:TQQ14706849844@163.com" style="padding:12px 0;font-size:14px">邮件联系 <span style="float:right;color:var(--muted)">↗</span></a>
     </div>
     <button class="icon-btn" type="button" data-close style="position:absolute;top:14px;right:14px">✕</button>
