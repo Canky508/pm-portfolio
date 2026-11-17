@@ -23,9 +23,16 @@ npx serve .
 
 - `index.html`：作品集主页面（内联 CSS / JS，零依赖）
 - `demo/yaya/`：漫画学雅思可交互原型（来自 `comic-ielts` 仓库的 `design/preview`）
+- `demo/starfun/`：哒乐星交互原型（来自 `starfun-app` 的 `docs/design/forest/prototype`，已去掉右侧说明面板，只保留主题切换与操作按钮）
 - `assets/`：截图、图标与二维码
 - `assets/qr-site.svg` / `qr-site.png`：指向线上地址的二维码
 - `assets/og.png`：分享封面图
+
+## 相关在线 Demo
+
+- 哒乐星交互原型：`/demo/starfun/index.html`
+- 漫画学雅思 H5 原型：`/demo/yaya/index.html`
+- 金灵酒鬼在线试玩：<https://canky508.github.io/LIngruiz1hejiu/>
 
 ## 部署
 
