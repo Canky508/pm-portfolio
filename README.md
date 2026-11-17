@@ -39,7 +39,7 @@ git commit -m "update portfolio"
 git push
 ```
 
-GitHub Pages 会自动更新（分支 `main`，根目录）。
+GitHub Pages 会自动更新（分支 `master`，根目录）。
 
 ## 二维码
 
