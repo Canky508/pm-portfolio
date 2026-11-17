@@ -222,8 +222,8 @@
     transition:transform .25s ease,box-shadow .25s ease;
   }
   .shot:hover .frame{transform:translateY(-3px);box-shadow:0 20px 44px rgba(39,32,20,.13)}
-  .shot img{width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;object-position:top}
-  .shot.poster img{aspect-ratio:9/16}
+  .shot img{width:100%;height:auto;object-fit:contain;background:#fff}
+  .shot.poster img{aspect-ratio:9/16;object-fit:cover}
   .shot figcaption{font-size:11px;color:var(--muted);line-height:1.6;padding:9px 2px 0;display:flex;gap:6px}
   .shot figcaption b{color:var(--ink-2);font-weight:600}
   .zoom-hint{position:absolute;right:8px;top:8px;width:26px;height:26px;border-radius:50%;background:rgba(23,22,19,.62);color:#fff;
