@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f7f4ee">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="谭倩琪的产品作品集：哒乐星 StarFun、挪啦、漫画学雅思、金灵酒鬼。记录从真实问题到产品落地的过程。">
+<title>谭倩琪 · 产品作品集 2026</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="谭倩琪 · 产品作品集 2026">
+<meta property="og:description" content="哒乐星、挪啦、漫画学雅思、金灵酒鬼：4 个从真实问题出发的产品，以及它们被验证到什么程度。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://canky508.github.io/pm-portfolio/assets/og.png">
+<style>
+  :root{
+    --paper:#f7f4ee;
+    --paper-2:#efe9df;
+    --ink:#171613;
+    --ink-2:#3b3831;
+    --muted:#6f6a60;
+    --line:rgba(23,22,19,.13);
+    --line-soft:rgba(23,22,19,.08);
+    --starfun:#2f5d50;
+    --nuola:#d9553a;
+    --yaya:#e0a02f;
+    --jl:#8d1f2e;
+    --accent:var(--ink);
+    --wrap:1180px;
+    --serif:"Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;line-height:1.7;
+    background-image:
+      radial-gradient(1200px 600px at 85% -10%,rgba(224,160,47,.10),transparent 60%),
+      radial-gradient(900px 500px at -10% 20%,rgba(47,93,80,.06),transparent 60%);
+    background-repeat:no-repeat;
+  }
+  ::selection{background:#171613;color:#f7f4ee}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+  .wrap{width:min(var(--wrap),calc(100% - 44px));margin-inline:auto}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .eyebrow{
+    font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);
+    display:flex;align-items:center;gap:10px;margin:0 0 18px;font-weight:600;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:currentColor;opacity:.6}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    position:sticky;top:0;z-index:50;backdrop-filter:saturate(140%) blur(14px);
+    background:rgba(247,244,238,.82);border-bottom:1px solid transparent;transition:border-color .25s ease,background .25s ease;
+  }
+  .topbar.scrolled{border-bottom-color:var(--line-soft);background:rgba(247,244,238,.95)}
+  @media (max-width:720px){.topbar{background:rgba(247,244,238,.97)}.topbar.scrolled{background:rgba(247,244,238,.99)}}
+  .topbar-inner{display:flex;align-items:center;gap:26px;height:64px}
+  .brand{display:flex;align-items:baseline;gap:9px;font-weight:700;letter-spacing:.02em;white-space:nowrap}
+  .brand b{font-size:15px}
+  .brand span{font-size:10px;letter-spacing:.16em;color:var(--muted);font-weight:500}
+  .nav{display:flex;gap:22px;margin-left:auto}
+  .nav a{font-size:12.5px;color:var(--muted);padding:6px 0;position:relative;transition:color .2s}
+  .nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--ink);transition:right .25s ease}
+  .nav a:hover,.nav a.active{color:var(--ink)}
+  .nav a:hover::after,.nav a.active::after{right:0}
+  .top-actions{display:flex;align-items:center;gap:8px;margin-left:8px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    min-height:42px;padding:0 18px;border-radius:999px;font-size:13px;font-weight:600;
+    border:1px solid var(--ink);background:var(--ink);color:var(--paper);
+    transition:transform .18s ease,background .18s ease,color .18s ease;white-space:nowrap;
+  }
+  .btn:hover{transform:translateY(-1px);background:#2b2925}
+  .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn.ghost:hover{background:rgba(23,22,19,.05)}
+  .btn.small{min-height:36px;padding:0 14px;font-size:12px}
+  .btn .arw{font-size:15px;line-height:1;transform:translateY(-.5px)}
+  .icon-btn{
+    width:36px;height:36px;border-radius:50%;border:1px solid var(--line);display:inline-flex;
+    align-items:center;justify-content:center;background:transparent;transition:background .2s;
+  }
+  .icon-btn:hover{background:rgba(23,22,19,.05)}
+  .scroll-progress{position:fixed;top:0;left:0;height:2px;background:var(--ink);width:0;z-index:60;transition:width .08s linear}
+  .menu-wrap{display:none}
+
+  /* ---------- hero ---------- */
+  .hero{padding:clamp(48px,7vw,96px) 0 0;position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.65fr);gap:clamp(30px,5vw,70px);align-items:end}
+  .hero h1{
+    font-family:var(--serif);font-weight:700;font-size:clamp(40px,6.2vw,76px);
+    line-height:1.18;letter-spacing:-.035em;margin:0 0 26px;
+  }
+  .hero h1 .hl{position:relative;white-space:nowrap;z-index:0}
+  .hero h1 .hl::after{
+    content:"";position:absolute;left:-.02em;right:-.04em;bottom:.04em;height:.24em;
+    background:var(--yaya);opacity:.42;z-index:-1;transform:rotate(-.6deg);border-radius:2px;
+  }
+  .hero .lede{max-width:640px;font-size:clamp(14px,1.5vw,16px);color:var(--ink-2);line-height:1.95;margin:0 0 12px}
+  .hero .lede + .lede{color:var(--muted);font-size:14px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:26px;font-size:12px;color:var(--muted)}
+  .hero-meta span{display:inline-flex;align-items:center;gap:7px}
+  .dot{width:6px;height:6px;border-radius:50%;background:#5d8a63;box-shadow:0 0 0 3px rgba(93,138,99,.14)}
+  .hero-side{display:flex;flex-direction:column;gap:14px;padding-bottom:4px}
+  .qr-card{
+    background:#fff;border:1px solid var(--line-soft);border-radius:20px;padding:16px;
+    box-shadow:0 18px 50px rgba(39,32,20,.08);text-align:center;
+  }
+  .qr-card img{width:100%;max-width:148px;margin:0 auto 10px;border-radius:6px}
+  .qr-card b{display:block;font-size:13px;letter-spacing:.02em}
+  .qr-card small{display:block;font-size:10.5px;color:var(--muted);margin-top:4px;line-height:1.6}
+  .qr-card .copy{width:100%;margin-top:10px}
+  .hero-note{
+    border:1px dashed var(--line);border-radius:16px;padding:14px 16px;font-size:11.5px;color:var(--muted);
+    line-height:1.8;background:rgba(255,255,255,.35)
+  }
+  .hero-note b{color:var(--ink);font-weight:600}
+
+  .index-strip{margin-top:clamp(36px,5vw,62px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .index-strip ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+  .index-strip li{border-right:1px solid var(--line)}
+  .index-strip li:last-child{border-right:0}
+  .index-strip a{display:flex;flex-direction:column;gap:6px;padding:18px 18px 20px;transition:background .2s}
+  .index-strip a:hover{background:rgba(23,22,19,.035)}
+  .index-strip .no{font-family:var(--serif);font-size:12px;color:var(--muted)}
+  .index-strip .nm{font-size:14.5px;font-weight:650;display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .index-strip .nm span{font-size:11px;color:var(--muted);font-weight:400}
+  .index-strip .tg{font-size:10.5px;color:var(--muted);line-height:1.5}
+  .index-strip .st{display:inline-flex;align-items:center;gap:5px;font-size:9.5px;letter-spacing:.05em;color:var(--accent);font-weight:600}
+  .index-strip .st::before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}
+
+  /* ---------- method ---------- */
+  .method{padding:clamp(54px,7vw,92px) 0 clamp(30px,4vw,46px)}
+  .method-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:40px;align-items:end;margin-bottom:44px}
+  .method h2,.section-title{
+    font-family:var(--serif);font-weight:700;font-size:clamp(28px,3.6vw,44px);line-height:1.3;letter-spacing:-.025em;margin:0
+  }
+  .method-head p{margin:0;color:var(--muted);font-size:14px;line-height:2}
+  .method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .method-card{border-top:1px solid var(--ink);padding-top:18px;position:relative}
+  .method-card .n{font-family:var(--serif);font-size:12px;color:var(--muted);letter-spacing:.12em}
+  .method-card h3{font-size:17px;margin:12px 0 8px;letter-spacing:-.01em}
+  .method-card p{margin:0;font-size:12.5px;color:var(--muted);line-height:1.9}
+  .method-card em{font-style:normal;display:inline-block;margin-top:14px;font-size:11px;color:var(--ink-2);border-bottom:1px solid var(--line)}
+
+  .matrix{margin-top:clamp(34px,5vw,54px);border:1px solid var(--line);border-radius:18px;overflow:hidden;background:rgba(255,255,255,.4)}
+  .matrix-row{display:grid;grid-template-columns:1.05fr 1.5fr 2fr;gap:18px;padding:14px 18px;border-bottom:1px solid var(--line-soft);font-size:12px;align-items:center}
+  .matrix-row:last-child{border-bottom:0}
+  .matrix-row.head{background:rgba(23,22,19,.04);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .matrix-row b{font-size:12.5px;display:flex;align-items:center;gap:8px}
+  .matrix-row b i{width:6px;height:6px;border-radius:50%;background:var(--c,var(--ink));font-style:normal}
+  .matrix-row .ev{color:var(--muted);font-size:11.5px;line-height:1.7}
+
+  /* ---------- case ---------- */
+  .case{position:relative;padding:clamp(54px,7vw,96px) 0 clamp(40px,5vw,64px);border-top:1px solid var(--line);scroll-margin-top:74px;overflow:hidden}
+  .case::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(800px 420px at 88% 8%,color-mix(in srgb,var(--accent) 9%,transparent),transparent 68%);
+    opacity:.9
+  }
+  .case-head{position:relative;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(280px,.6fr);gap:40px;align-items:end;margin-bottom:clamp(28px,4vw,44px)}
+  .case-kicker{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+  .case-no{font-family:var(--serif);font-size:12px;letter-spacing:.14em;color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);border-radius:999px;padding:4px 10px}
+  .case-cat{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .case h2{font-family:var(--serif);font-size:clamp(34px,5vw,58px);line-height:1.1;letter-spacing:-.035em;margin:0 0 14px}
+  .case-tagline{font-size:clamp(16px,2vw,20px);line-height:1.7;color:var(--ink-2);margin:0;max-width:620px}
+  .case-tagline b{background:linear-gradient(transparent 62%,color-mix(in srgb,var(--accent) 22%,transparent) 62%);font-weight:600}
+  .case-meta{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;border-left:1px solid var(--line);padding-left:22px}
+  .case-meta small{display:block;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+  .case-meta b{font-size:12.5px;font-weight:600;line-height:1.6}
+  .status{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;letter-spacing:.06em;color:var(--accent);
+    border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);background:color-mix(in srgb,var(--accent) 7%,transparent);
+    border-radius:999px;padding:4px 10px;margin-bottom:14px}
+  .status::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+
+  .case-body{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,4vw,54px);position:relative}
+  .case-text p{font-size:14px;line-height:2;color:var(--ink-2);margin:0}
+  .block{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid var(--line-soft)}
+  .block:first-child{padding-top:0}
+  .block h3{font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin:3px 0 0;font-weight:650}
+  .block p{font-size:13.5px;line-height:1.95}
+  .case ul.clean{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+  .case ul.clean li{position:relative;padding-left:16px;font-size:12.8px;line-height:1.8;color:var(--ink-2)}
+  .case ul.clean li::before{content:"";position:absolute;left:0;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.75}
+  .decision-box{border:1px solid var(--line);border-radius:18px;padding:20px 20px 8px;background:rgba(255,255,255,.42)}
+  .decision-box > h3{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;font-weight:650}
+  .decision{display:grid;grid-template-columns:22px 1fr;gap:10px;padding:0 0 14px;margin-bottom:14px;border-bottom:1px solid var(--line-soft)}
+  .decision:last-child{border-bottom:0;margin-bottom:0}
+  .decision .dn{font-family:var(--serif);font-size:12px;color:var(--accent);padding-top:2px}
+  .decision b{display:block;font-size:12.8px;line-height:1.6;margin-bottom:3px}
+  .decision p{font-size:11.8px;color:var(--muted);line-height:1.75;margin:0}
+  .outcome{margin-top:18px;border-radius:16px;padding:16px 18px;background:color-mix(in srgb,var(--accent) 6%,transparent);border:1px solid color-mix(in srgb,var(--accent) 16%,transparent)}
+  .outcome h3{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 8px;font-weight:700}
+  .outcome p{font-size:12.3px;line-height:1.85;color:var(--ink-2)}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+  .chip{font-size:10.5px;border:1px solid var(--line);border-radius:999px;padding:3px 9px;color:var(--muted);background:rgba(255,255,255,.5)}
+  .reflection{margin-top:18px;padding-left:15px;border-left:2px solid color-mix(in srgb,var(--accent) 45%,transparent)}
+  .reflection h3{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 6px;font-weight:650}
+  .reflection p{font-size:12.5px;line-height:1.9;color:var(--muted)}
+  .case-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+
+  .gallery-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin:clamp(34px,5vw,52px) 0 16px;position:relative}
+  .gallery-head h3{font-family:var(--serif);font-size:clamp(18px,2.2vw,24px);margin:0;letter-spacing:-.01em}
+  .gallery-head p{margin:6px 0 0;font-size:11.5px;color:var(--muted)}
+  .gallery-nav{display:flex;gap:6px}
+  .gallery{
+    display:grid;grid-auto-flow:column;grid-auto-columns:minmax(190px,1fr);gap:14px;overflow-x:auto;
+    scroll-snap-type:x mandatory;padding:4px 2px 18px;scrollbar-width:none;position:relative;
+  }
+  .gallery::-webkit-scrollbar{display:none}
+  .shot{margin:0;scroll-snap-align:start;cursor:zoom-in;position:relative}
+  .shot .frame{
+    position:relative;border-radius:20px;overflow:hidden;background:#fff;
+    border:1px solid var(--line-soft);box-shadow:0 12px 34px rgba(39,32,20,.09);
+    transition:transform .25s ease,box-shadow .25s ease;
+  }
+  .shot:hover .frame{transform:translateY(-3px);box-shadow:0 20px 44px rgba(39,32,20,.13)}
+  .shot img{width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;object-position:top}
+  .shot.poster img{aspect-ratio:9/16}
+  .shot figcaption{font-size:11px;color:var(--muted);line-height:1.6;padding:9px 2px 0;display:flex;gap:6px}
+  .shot figcaption b{color:var(--ink-2);font-weight:600}
+  .zoom-hint{position:absolute;right:8px;top:8px;width:26px;height:26px;border-radius:50%;background:rgba(23,22,19,.62);color:#fff;
+    display:grid;place-items:center;font-size:12px;opacity:0;transition:opacity .2s;pointer-events:none}
+  .shot:hover .zoom-hint{opacity:1}
+  .shot .device{border-radius:26px;padding:7px;background:#141414;border:0}
+  .shot .device img{border-radius:20px}
+
+  /* ---------- ability / contact ---------- */
+  .ability{padding:clamp(54px,7vw,96px) 0;border-top:1px solid var(--line);background:rgba(255,255,255,.28)}
+  .ability-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(30px,5vw,70px)}
+  .ability p.lead{font-size:14px;color:var(--muted);line-height:2;margin:18px 0 0;max-width:420px}
+  .skills{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+  .skill{padding:14px 0;border-bottom:1px solid var(--line-soft)}
+  .skill b{font-size:13px;display:block;margin-bottom:4px}
+  .skill span{font-size:11.5px;color:var(--muted);line-height:1.7;display:block}
+  .tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:26px}
+  .tools span{font-size:10.5px;border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--muted);background:var(--paper)}
+
+  .contact{padding:clamp(54px,7vw,100px) 0;border-top:1px solid var(--line);position:relative;overflow:hidden}
+  .contact::before{content:"";position:absolute;right:-120px;bottom:-180px;width:520px;height:520px;border-radius:50%;
+    background:radial-gradient(circle,rgba(224,160,47,.20),transparent 62%);pointer-events:none}
+  .contact-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.6fr);gap:clamp(40px,6vw,80px);align-items:center;position:relative}
+  .contact h2{font-family:var(--serif);font-size:clamp(30px,4.4vw,52px);line-height:1.32;letter-spacing:-.03em;margin:0 0 20px}
+  .contact h2 .mark{position:relative;white-space:nowrap;z-index:0}
+  .mob-only{display:none}
+  .contact h2 .mark::after{content:"";position:absolute;left:-.02em;right:-.03em;bottom:.06em;height:.24em;background:var(--yaya);opacity:.45;z-index:-1;border-radius:2px;transform:rotate(-.5deg)}
+  .contact p{font-size:14px;line-height:2;color:var(--muted);max-width:560px;margin:0}
+  .contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .contact-info{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:24px;font-size:11.5px;color:var(--muted)}
+  .contact-card{background:#fff;border:1px solid var(--line-soft);border-radius:22px;padding:22px;text-align:center;box-shadow:0 22px 60px rgba(39,32,20,.08)}
+  .contact-card img{width:min(180px,68%);margin:0 auto 14px}
+  .contact-card b{font-size:13px;display:block}
+  .contact-card small{display:block;font-size:10.5px;color:var(--muted);margin-top:5px;line-height:1.7}
+  .contact-card .copy{width:100%;margin-top:14px}
+
+  footer{padding:26px 0 42px;border-top:1px solid var(--line-soft);color:var(--muted);font-size:10.5px}
+  .footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;line-height:1.9}
+  footer a{border-bottom:1px solid var(--line)}
+
+  /* ---------- dialog / lightbox ---------- */
+  .overlay{
+    position:fixed;inset:0;z-index:100;display:none;background:rgba(16,15,13,.86);
+    backdrop-filter:blur(8px);padding:24px;align-items:center;justify-content:center;
+  }
+  .overlay.open{display:flex}
+  .overlay .close{
+    position:absolute;top:18px;right:18px;width:42px;height:42px;border-radius:50%;
+    background:rgba(255,255,255,.12);color:#fff;font-size:20px;display:grid;place-items:center;
+  }
+  .overlay .close:hover{background:rgba(255,255,255,.2)}
+  .lightbox-inner{max-width:min(92vw,430px);text-align:center;position:relative}
+  .lightbox-inner img{max-height:80vh;width:auto;max-width:100%;margin:0 auto;border-radius:16px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+  .lightbox-cap{color:rgba(255,255,255,.7);font-size:12px;margin-top:14px;line-height:1.7}
+  .lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:18px;display:grid;place-items:center}
+  .lb-nav.prev{left:18px}.lb-nav.next{right:18px}
+  .lb-nav:hover{background:rgba(255,255,255,.22)}
+  .qr-modal{background:var(--paper);border-radius:22px;padding:26px;max-width:340px;width:100%;text-align:center;position:relative}
+  .qr-modal img{width:220px;margin:0 auto 16px}
+  .qr-modal h3{font-family:var(--serif);font-size:22px;margin:0 0 6px}
+  .qr-modal p{font-size:11.5px;color:var(--muted);margin:0 0 16px;line-height:1.7}
+
+  .toast{
+    position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);z-index:120;
+    background:#171613;color:#f7f4ee;border-radius:999px;padding:10px 18px;font-size:12px;
+    opacity:0;pointer-events:none;transition:all .25s ease;white-space:nowrap;
+  }
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:1fr;align-items:start}
+    .hero-side{display:grid;grid-template-columns:1fr 1fr;align-items:start}
+    .case-head{grid-template-columns:1fr;gap:22px}
+    .case-meta{border-left:0;border-top:1px solid var(--line);padding:16px 0 0;grid-template-columns:repeat(4,1fr)}
+    .case-body{grid-template-columns:1fr}
+    .ability-grid{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr}
+    .contact-card{max-width:360px}
+    .nav{display:none}
+    .menu-wrap{display:block;margin-left:auto}
+    .top-actions .btn{display:none}
+    .lb-nav.prev{left:6px}.lb-nav.next{right:6px}
+    .contact h2 .mark::after{opacity:.4}
+    .mob-only{display:inline}
+  }
+  @media (max-width:720px){
+    .wrap{width:calc(100% - 32px)}
+    .topbar-inner{height:58px}
+    .brand span{display:none}
+    .hero{padding-top:38px}
+    .hero h1{font-size:clamp(34px,10.5vw,46px);line-height:1.22}
+    .hero .lede{font-size:13.5px}
+    .hero-side{grid-template-columns:1fr}
+    .qr-card{display:none}
+    .index-strip ol{grid-template-columns:1fr 1fr}
+    .index-strip li:nth-child(2){border-right:0}
+    .index-strip li:nth-child(-n+2){border-bottom:1px solid var(--line)}
+    .index-strip a{padding:14px}
+    .method-head{grid-template-columns:1fr;gap:14px}
+    .method-grid{grid-template-columns:1fr;gap:0}
+    .method-card{border-top:1px solid var(--line);padding:16px 0}
+    .method-card:first-child{border-top:1px solid var(--ink)}
+    .matrix-row{grid-template-columns:1fr;gap:4px;padding:12px 14px}
+    .matrix-row.head{display:none}
+    .matrix-row b{font-size:12.5px}
+    .matrix-row .ev{font-size:11px}
+    .case{padding-top:48px}
+    .case-meta{grid-template-columns:1fr 1fr;gap:12px 16px}
+    .block{grid-template-columns:52px 1fr;gap:10px}
+    .block h3{font-size:10px}
+    .gallery{grid-auto-columns:72%;gap:10px}
+    .gallery-nav{display:none}
+    .skills{grid-template-columns:1fr}
+    .shot figcaption{font-size:10.5px}
+    .contact h2{font-size:30px}
+    footer{padding-bottom:30px}
+  }
+  @media (max-width:400px){
+    .gallery{grid-auto-columns:80%}
+    .hero-actions .btn{width:100%}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none;transition:none}
+    *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+  }
+</style>
+</head>
+<body>
+<div class="scroll-progress" id="progress" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top" aria-label="回到顶部">
+      <b>谭倩琪</b><span>PRODUCT PORTFOLIO</span>
+    </a>
+    <nav class="nav" aria-label="页面导航">
+      <a href="#starfun" data-nav="starfun">哒乐星</a>
+      <a href="#nuola" data-nav="nuola">挪啦</a>
+      <a href="#yaya" data-nav="yaya">漫画学雅思</a>
+      <a href="#jinling" data-nav="jinling">金灵酒鬼</a>
+      <a href="#about" data-nav="about">关于我</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" type="button" data-qr aria-label="显示本页二维码" title="扫码查看">⌗</button>
+      <a class="btn small" href="mailto:TQQ14706849844@163.com">联系我 <span class="arw">↗</span></a>
+    </div>
+    <div class="menu-wrap">
+      <button class="icon-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="打开导航">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">PRODUCT PORTFOLIO · 2026</p>
+          <h1>把真实的需求，<br>做成<span class="hl">能用</span>的产品。</h1>
+          <p class="lede">我是谭倩琪，南京大学企业管理硕士在读。做过校园社交、短信提醒工具、英语学习小程序，也在 48 小时黑客松里把「AI 调酒」做成了可演示的产品。</p>
+          <p class="lede">这不是一面截图墙。每个产品我都写了：看到的问题、当时的判断、做过的取舍，以及最后被验证到什么程度。</p>
+          <div class="hero-actions">
+            <a class="btn" href="#starfun">看 4 个产品 <span class="arw">↓</span></a>
+            <a class="btn ghost" href="#about">关于我的产品方法</a>
+          </div>
+          <div class="hero-meta">
+            <span><i class="dot"></i> 正在寻找产品经理 / AI 产品经理机会</span>
+            <span>南京 · 南京大学</span>
+            <span>4 个从 0 到 1 的产品</span>
+          </div>
+        </div>
+
+        <aside class="hero-side reveal">
+          <div class="qr-card">
+            <img src="assets/qr-site.svg" alt="本页二维码">
+            <b>扫码在手机上看</b>
+            <small>面试时可以直接扫码，<br>或把这一页转发给面试官。</small>
+            <button class="btn ghost small copy" type="button" data-copy>复制页面链接</button>
+          </div>
+          <div class="hero-note">
+            <b>3 分钟路线：</b>先看 4 个产品卡片，任选一个读「判断 + 取舍」，最后打开漫画学雅思的可交互原型。
+          </div>
+        </aside>
+      </div>
+
+      <nav class="index-strip" aria-label="产品索引">
+        <ol>
+          <li>
+            <a href="#starfun" style="--accent:var(--starfun)">
+              <span class="no">01 / SOCIAL</span>
+              <span class="nm">哒乐星 StarFun <span>↘</span></span>
+              <span class="tg">校园搭子社交 · LBS + 活动</span>
+              <span class="st">蒲公英内测</span>
+            </a>
+          </li>
+          <li>
+            <a href="#nuola" style="--accent:var(--nuola)">
+              <span class="no">02 / TOOL</span>
+              <span class="nm">挪啦 <span>↘</span></span>
+              <span class="tg">重要短信提醒 · Android</span>
+              <span class="st">已上架 · 2,000+ 用户</span>
+            </a>
+          </li>
+          <li>
+            <a href="#yaya" style="--accent:var(--yaya)">
+              <span class="no">03 / LEARNING</span>
+              <span class="nm">漫画学雅思 <span>↘</span></span>
+              <span class="tg">连续漫画 + 四维训练 · 小程序</span>
+              <span class="st">可交互原型</span>
+            </a>
+          </li>
+          <li>
+            <a href="#jinling" style="--accent:var(--jl)">
+              <span class="no">04 / AI</span>
+              <span class="nm">金灵酒鬼 <span>↘</span></span>
+              <span class="tg">AI 识酒 · 调酒 · 配菜 · 组局</span>
+              <span class="st">48h 黑客松 MVP</span>
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section class="method" id="method">
+    <div class="wrap">
+      <div class="method-head reveal">
+        <div>
+          <p class="eyebrow">HOW I WORK</p>
+          <h2>先把问题问对，<br>再用最小闭环验证。</h2>
+        </div>
+        <p>我不太相信「先画完所有页面再找用户」。更有效的顺序是：找到一个真实卡点，做一条能跑通的主路径，尽快让真实的人用起来，再补边界。</p>
+      </div>
+
+      <div class="method-grid">
+        <div class="method-card reveal">
+          <div class="n">01</div>
+          <h3>找真问题</h3>
+          <p>问卷、访谈、竞品和场景拆解一起用。不把「用户说要一个功能」直接当需求，而是追到他真正想完成的事。</p>
+          <em>证据：哒乐星需求调研 / 漫画学雅思用户定位</em>
+        </div>
+        <div class="method-card reveal">
+          <div class="n">02</div>
+          <h3>收敛最小闭环</h3>
+          <p>先跑通一条主路径，再补异常和边界。把规则、状态和失败路径写进产品，而不是留给开发临场决定。</p>
+          <em>证据：挪啦双触发 / 哒乐星举报处置 / 芽芽 ADR</em>
+        </div>
+        <div class="method-card reveal">
+          <div class="n">03</div>
+          <h3>用证据说话</h3>
+          <p>每个阶段都要有可检查的产出：可点原型、真机安装包、应用商店上架、用户数、自动化测试。</p>
+          <em>证据：上架、内测包、49 个单测、48h Demo</em>
+        </div>
+      </div>
+
+      <div class="matrix reveal" role="table" aria-label="四个产品验证到哪一步">
+        <div class="matrix-row head" role="row">
+          <span>产品</span><span>验证到哪一步</span><span>可检查的证据</span>
+        </div>
+        <div class="matrix-row" role="row" style="--c:var(--starfun)">
+          <b><i></i>哒乐星</b>
+          <span>复杂社交产品从 0 到内测</span>
+          <span class="ev">4 个主 Tab · 认证 / 举报 / 群聊 · 多轮真机验收</span>
+        </div>
+        <div class="matrix-row" role="row" style="--c:var(--nuola)">
+          <b><i></i>挪啦</b>
+          <span>需求成立 + 分发跑通</span>
+          <span class="ev">Android 上架 · 2,000+ 累计用户 · 软著 / 备案</span>
+        </div>
+        <div class="matrix-row" role="row" style="--c:var(--yaya)">
+          <b><i></i>漫画学雅思</b>
+          <span>学习闭环可运行</span>
+          <span class="ev">7 个页面 · 49 个单测 · 14 步冒烟 · 1.8MB 包体</span>
+        </div>
+        <div class="matrix-row" role="row" style="--c:var(--jl)">
+          <b><i></i>金灵酒鬼</b>
+          <span>AI 体验可演示</span>
+          <span class="ev">48 小时 · 4 段完整流程 · GitHub 开源</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 01 哒乐星 ================= -->
+  <article class="case" id="starfun" style="--accent:var(--starfun)">
+    <div class="wrap">
+      <header class="case-head">
+        <div class="reveal">
+          <div class="case-kicker"><span class="case-no">01</span><span class="case-cat">CAMPUS SOCIAL · ANDROID</span></div>
+          <h2>哒乐星 StarFun</h2>
+          <p class="case-tagline">大学生找搭子，<b>不该靠群里刷屏。</b></p>
+          <div class="status" style="margin-top:16px">蒲公英内测 · 可体验</div>
+        </div>
+        <div class="case-meta reveal">
+          <div><small>身份</small><b>项目发起人 / 产品负责人</b></div>
+          <div><small>时间</small><b>2025.09 — 至今</b></div>
+          <div><small>关键词</small><b>LBS · 社区 · 信任机制</b></div>
+          <div><small>团队</small><b>产品 / 设计 / 开发协作</b></div>
+        </div>
+      </header>
+
+      <div class="case-body">
+        <div class="case-text reveal">
+          <div class="block">
+            <h3>问题</h3>
+            <p>想找人打一场球、去图书馆自习，发在群里常常没人回；表白墙的信息又很快沉底。陌生人组局，还多了一层「靠不靠谱」的顾虑。</p>
+          </div>
+          <div class="block">
+            <h3>判断</h3>
+            <p>缺的不是又一个信息流，而是一个「低压力发起 + 可验证身份」的线下组局入口。地图解决「现在附近有谁」，活动解决「这周末做什么」。</p>
+          </div>
+          <div class="block">
+            <h3>我做的</h3>
+            <ul class="clean">
+              <li>用户调研与场景拆解，收敛出「找搭子」「组活动」双核心场景</li>
+              <li>设计 4 个主 Tab 的信息架构：地图发现 → 发布 → 报名 → 群聊</li>
+              <li>把实名 / 学校认证、信用与举报处置做成产品规则，而不只是协议文案</li>
+              <li>跟开发做版本拆解、真机验收，并推进官网、备案、软著与上架材料</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="decision-box">
+            <h3>关键设计与取舍</h3>
+            <div class="decision">
+              <span class="dn">01</span>
+              <div><b>双入口，而不是单信息流</b><p>地图承接即时需求，活动承接计划性需求；两者共用一套报名和群聊链路。</p></div>
+            </div>
+            <div class="decision">
+              <span class="dn">02</span>
+              <div><b>认证分层，避免首屏劝退</b><p>先可浏览，再轻认证，关键动作前完成学校 / 实名认证，把信任成本放在正确的时刻。</p></div>
+            </div>
+            <div class="decision">
+              <span class="dn">03</span>
+              <div><b>把「信任」写进流程</b><p>举报 → 处置 → 复核 → 通知，每一步都有状态、责任人和出口，而不是一句「审核中」。</p></div>
+            </div>
+          </div>
+
+          <div class="outcome">
+            <h3>结果</h3>
+            <p>产品已走到可安装的 Android 内测阶段，完成账号、认证、群聊、举报等模块，并经过多轮真机验收。</p>
+            <div class="chips">
+              <span class="chip">4 个主 Tab</span><span class="chip">多轮真机验收</span><span class="chip">官网已上线</span><span class="chip">备案 / 软著 / 安全评估</span>
+            </div>
+          </div>
+
+          <div class="reflection">
+            <h3>复盘</h3>
+            <p>社交产品最难的从来不是把功能做出来，而是让用户敢迈出第一步。下一步我会把注意力放在「首场活动的成功率」，而不是日活数字。</p>
+          </div>
+
+          <div class="case-links">
+            <a class="btn small" href="https://dalexing-starfun.site" target="_blank" rel="noopener">访问产品官网 <span class="arw">↗</span></a>
+            <a class="btn ghost small" href="mailto:TQQ14706849844@163.com?subject=%E7%94%B3%E8%AF%B7%E4%BD%93%E9%AA%8C%E5%93%92%E4%B9%90%E6%98%9F%E5%86%85%E6%B5%8B%E5%8C%85">获取内测安装包</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-head reveal">
+        <div><h3>界面与流程</h3><p>从地图发现，到动态、活动、群聊与个人主页。</p></div>
+        <div class="gallery-nav"><button class="icon-btn" type="button" data-scroll="-1" aria-label="向左看">←</button><button class="icon-btn" type="button" data-scroll="1" aria-label="向右看">→</button></div>
+      </div>
+      <div class="gallery reveal" data-gallery>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-map.webp" alt="哒乐星地图找搭子界面" loading="lazy"></div><figcaption><b>地图</b> 附近的人与活动，一眼可见</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-square.webp" alt="哒乐星校园动态界面" loading="lazy"></div><figcaption><b>广场</b> 把校园生活分享给同频的人</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-activity.webp" alt="哒乐星活动报名界面" loading="lazy"></div><figcaption><b>活动</b> 从发起到报名成局</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-messages.webp" alt="哒乐星消息与群聊界面" loading="lazy"></div><figcaption><b>消息</b> 报名后自动建群，沟通不断线</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/starfun-profile.webp" alt="哒乐星个人主页界面" loading="lazy"></div><figcaption><b>我的</b> 认证与信用信息集中呈现</figcaption></figure>
+      </div>
+    </div>
+  </article>
+
+  <!-- ================= 02 挪啦 ================= -->
+  <article class="case" id="nuola" style="--accent:var(--nuola)">
+    <div class="wrap">
+      <header class="case-head">
+        <div class="reveal">
+          <div class="case-kicker"><span class="case-no">02</span><span class="case-cat">UTILITY · ANDROID</span></div>
+          <h2>挪啦</h2>
+          <p class="case-tagline">重要短信，<b>不该被 99+ 淹没。</b></p>
+          <div class="status" style="margin-top:16px">Android 已上架 · 2,000+ 用户</div>
+        </div>
+        <div class="case-meta reveal">
+          <div><small>身份</small><b>联合发起人 / 产品</b></div>
+          <div><small>时间</small><b>2026.02 上架</b></div>
+          <div><small>关键词</small><b>效率工具 · 通知 · 上架</b></div>
+          <div><small>结果</small><b>2,000+ 累计用户</b></div>
+        </div>
+      </header>
+
+      <div class="case-body">
+        <div class="case-text reveal">
+          <div class="block">
+            <h3>问题</h3>
+            <p>违停挪车、工单、航班变更这些短信，经常被 99+ 的消息淹没。用户不是没看到，而是没意识到它重要——等发现时，损失已经发生。</p>
+          </div>
+          <div class="block">
+            <h3>判断</h3>
+            <p>把「所有通知」做成降噪不现实。更小、更可控的切口是：让用户自己定义「什么算重要」，再用足够强的提醒把这条信息送到他面前。</p>
+          </div>
+          <div class="block">
+            <h3>我做的</h3>
+            <ul class="clean">
+              <li>定义「关键词 + 发件号码」双触发规则，覆盖违停、工作、家人、灾害等场景</li>
+              <li>设计全屏弹窗 + 铃声 / 震动 + 最近提醒记录的完整提醒链路</li>
+              <li>做权限引导与使用帮助，降低监测开启门槛，减少「装了但没开」</li>
+              <li>负责软著、隐私、上架材料与多渠道推广，把产品真正送到用户手里</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="decision-box">
+            <h3>关键设计与取舍</h3>
+            <div class="decision">
+              <span class="dn">01</span>
+              <div><b>用户自定义，而不是平台猜</b><p>重要与否交给用户设置关键词和号码，减少误判，也降低隐私解释成本。</p></div>
+            </div>
+            <div class="decision">
+              <span class="dn">02</span>
+              <div><b>强提醒，但必须可退出</b><p>全屏预警配明确的关闭与「停止监测」路径，避免工具变成打扰。</p></div>
+            </div>
+            <div class="decision">
+              <span class="dn">03</span>
+              <div><b>用一个高频场景做传播</b><p>先打「违停挪车」这个强需求瞬间，再扩展到工作、家人与灾害预警。</p></div>
+            </div>
+          </div>
+
+          <div class="outcome">
+            <h3>结果</h3>
+            <p>2026 年 2 月安卓应用商店上架，累计用户突破 2,000；完成软著、备案与多商店素材，关键词模板覆盖多个真实场景。</p>
+            <div class="chips">
+              <span class="chip">Android 上架</span><span class="chip">2,000+ 用户</span><span class="chip">软著 / 备案</span><span class="chip">多商店素材</span>
+            </div>
+          </div>
+
+          <div class="reflection">
+            <h3>复盘</h3>
+            <p>工具产品的增长不是靠功能列表，而是靠一个「被需要」的瞬间。挪车短信就是那个瞬间；下一步要把「第一次设置」的成功率做得更高。</p>
+          </div>
+
+          <div class="case-links">
+            <a class="btn small" href="https://m.malink.cn/s/Ebyqiu" target="_blank" rel="noopener">安卓下载体验 <span class="arw">↗</span></a>
+            <a class="btn ghost small" href="#nuola-gallery">看界面</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-head reveal" id="nuola-gallery">
+        <div><h3>界面与提醒链路</h3><p>自定义关键词，到全屏预警——每一步都为「别错过」服务。</p></div>
+        <div class="gallery-nav"><button class="icon-btn" type="button" data-scroll="-1" aria-label="向左看">←</button><button class="icon-btn" type="button" data-scroll="1" aria-label="向右看">→</button></div>
+      </div>
+      <div class="gallery reveal" data-gallery>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-2.webp" alt="挪啦监测首页" loading="lazy"></div><figcaption><b>首页</b> 开启监测，持续守护</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-5.webp" alt="挪啦关键词管理界面" loading="lazy"></div><figcaption><b>关键词</b> 生意、面试、医保等重要场景</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-4.webp" alt="挪啦家人和紧急关键词界面" loading="lazy"></div><figcaption><b>关键词</b> 家人、警报、紧急通知</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-3.webp" alt="挪啦工作场景关键词界面" loading="lazy"></div><figcaption><b>关键词</b> 工单、换班、VIP 客户</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/nuola-6.webp" alt="挪啦全屏弹窗预警" loading="lazy"></div><figcaption><b>预警</b> 全屏弹窗 + 高分贝铃声</figcaption></figure>
+      </div>
+    </div>
+  </article>
+
+  <!-- ================= 03 漫画学雅思 ================= -->
+  <article class="case" id="yaya" style="--accent:var(--yaya)">
+    <div class="wrap">
+      <header class="case-head">
+        <div class="reveal">
+          <div class="case-kicker"><span class="case-no">03</span><span class="case-cat">LEARNING · WECHAT MINI PROGRAM</span></div>
+          <h2>漫画学雅思 <span style="font-size:.42em;letter-spacing:0;color:var(--muted);font-family:var(--sans);font-weight:500">/ 芽芽英语</span></h2>
+          <p class="case-tagline">不急着背单词，<b>先读懂一个故事。</b></p>
+          <div class="status" style="margin-top:16px">微信小程序 v0.4 · 原型可体验</div>
+        </div>
+        <div class="case-meta reveal">
+          <div><small>身份</small><b>产品负责人 / 独立设计</b></div>
+          <div><small>时间</small><b>2026.10 — 至今</b></div>
+          <div><small>关键词</small><b>学习闭环 · 内容结构 · 交互</b></div>
+          <div><small>阶段</small><b>待真机 / 审核</b></div>
+        </div>
+      </header>
+
+      <div class="case-body">
+        <div class="case-text reveal">
+          <div class="block">
+            <h3>问题</h3>
+            <p>5–6 分的考生往往单词背了不少，但读长句还是慢，读完记不住。传统背单词产品把词从语境里抽走，迁移不到阅读。</p>
+          </div>
+          <div class="block">
+            <h3>判断</h3>
+            <p>提分的关键不是词汇量，而是「在语境中快速识别词块」。漫画提供连续情境、人物和情绪，能让一个表达被记住更久，也更愿意读下去。</p>
+          </div>
+          <div class="block">
+            <h3>我做的</h3>
+            <ul class="clean">
+              <li>用户与竞品调研，确定「漫画阅读 → 四维训练 → 延迟复习」的学习闭环</li>
+              <li>写 MVP 规格与 12 条 ADR，完成 7 个页面与可点击原型</li>
+              <li>设计 5 张分镜 / 10 句对白 / 6 个目标表达的内容结构</li>
+              <li>组织开发与验收：49 个单测、14 步自动化冒烟、1.8MB 包体</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="decision-box">
+            <h3>关键设计与取舍</h3>
+            <div class="decision">
+              <span class="dn">01</span>
+              <div><b>一话只锁 6 个表达</b><p>少而深。按「表达 × 词义 / 拼写 / 搭配 / 阅读」记录掌握度，不做过关式假掌握。</p></div>
+            </div>
+            <div class="decision">
+              <span class="dn">02</span>
+              <div><b>点气泡 = 单句播放 + 中文</b><p>把「听不懂」拆成可重试的小步骤；长难句只在角落给低干扰入口，不打断阅读。</p></div>
+            </div>
+            <div class="decision">
+              <span class="dn">03</span>
+              <div><b>首版零第三方 SDK、零埋点</b><p>先验证学习闭环，再谈增长和商业化。数据只存本机，降低合规与信任成本。</p></div>
+            </div>
+          </div>
+
+          <div class="outcome">
+            <h3>结果</h3>
+            <p>已有一个可运行的原生小程序 v0.4 竖切片：从首页到复习完整跑通，并通过自动化质量链；目前待真机与审核。</p>
+            <div class="chips">
+              <span class="chip">7 个页面</span><span class="chip">49 个单测</span><span class="chip">14 步冒烟</span><span class="chip">1.8MB 包体</span>
+            </div>
+          </div>
+
+          <div class="reflection">
+            <h3>复盘</h3>
+            <p>学习产品最大的诱惑是不断加内容。我用 ADR 把「不做什么」写下来：先让一话被读完、被复习，再谈六话和付费。</p>
+          </div>
+
+          <div class="case-links">
+            <a class="btn small" href="demo/yaya/index.html" target="_blank" rel="noopener">打开可交互原型 <span class="arw">↗</span></a>
+            <a class="btn ghost small" href="https://github.com/Canky508/comic-ielts" target="_blank" rel="noopener">项目说明 / 源码</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-head reveal">
+        <div><h3>学习旅程</h3><p>手机打开原型是全屏体验；桌面打开是带设计说明的手机预览。</p></div>
+        <div class="gallery-nav"><button class="icon-btn" type="button" data-scroll="-1" aria-label="向左看">←</button><button class="icon-btn" type="button" data-scroll="1" aria-label="向右看">→</button></div>
+      </div>
+      <div class="gallery reveal" data-gallery>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-home.webp" alt="芽芽英语首页" loading="lazy"></div><figcaption><b>首页</b> 今天，和芽芽一起读懂一个故事</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-comic.webp" alt="芽芽英语漫画阅读页" loading="lazy"></div><figcaption><b>阅读</b> 点气泡听读，展开中文</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-meaning.webp" alt="芽芽英语词义训练页" loading="lazy"></div><figcaption><b>词义</b> 先猜义，再看解释</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-phrase.webp" alt="芽芽英语搭配训练页" loading="lazy"></div><figcaption><b>搭配</b> 把词块重新拼回来</figcaption></figure>
+        <figure class="shot"><div class="frame"><span class="zoom-hint">＋</span><img src="assets/yaya-review.webp" alt="芽芽英语延迟复习页" loading="lazy"></div><figcaption><b>复习</b> D1 / D3 / D7 三档提示强度</figcaption></figure>
+      </div>
+    </div>
+  </article>
+
+  <!-- ================= 04 金灵酒鬼 ================= -->
+  <article class="case" id="jinling" style="--accent:var(--jl)">
+    <div class="wrap">
+      <header class="case-head">
+        <div class="reveal">
+          <div class="case-kicker"><span class="case-no">04</span><span class="case-cat">AI · HACKATHON MVP</span></div>
+          <h2>金灵酒鬼</h2>
+          <p class="case-tagline">拍一瓶酒，<b>AI 帮你识酒、调酒、配菜、组局。</b></p>
+          <div class="status" style="margin-top:16px">抖音创变者黑客松 · 48h MVP</div>
+        </div>
+        <div class="case-meta reveal">
+          <div><small>身份</small><b>队长 / 产品 + 前端</b></div>
+          <div><small>时间</small><b>2026.06 · 48 小时</b></div>
+          <div><small>关键词</small><b>AI 应用 · 人格化 · 降级</b></div>
+          <div><small>团队</small><b>2 人</b></div>
+        </div>
+      </header>
+
+      <div class="case-body">
+        <div class="case-text reveal">
+          <div class="block">
+            <h3>问题</h3>
+            <p>想喝点好的，但看不懂酒标、不会调、不会配菜；搜到的内容不是百科就是广告，看完仍然不知道今晚该怎么喝。</p>
+          </div>
+          <div class="block">
+            <h3>判断</h3>
+            <p>用户要的不是知识库，而是一个「懂酒的朋友」，在三分钟内给出一套能执行的方案：这瓶酒是什么、怎么调、配什么、怎么组局。</p>
+          </div>
+          <div class="block">
+            <h3>我做的</h3>
+            <ul class="clean">
+              <li>2 人团队 48 小时：需求收敛、信息架构、交互原型、前端与路演</li>
+              <li>定义「女调酒师」产品人格与语气边界，让 AI 输出稳定、可信任</li>
+              <li>设计识酒 → 调酒 → 配菜 → 酒局邀请的完整演示链路</li>
+              <li>做 AI 失败降级：接口不可用时自动切 Mock，保证现场演示不中断</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="decision-box">
+            <h3>关键设计与取舍</h3>
+            <div class="decision">
+              <span class="dn">01</span>
+              <div><b>人格先行，再写提示词</b><p>先定义「她怎么说话」，再拆专业字段与个性表达；专业信息克制，语气统一。</p></div>
+            </div>
+            <div class="decision">
+              <span class="dn">02</span>
+              <div><b>演示优先，砍掉非核心</b><p>核心链路必须 3 分钟讲完；历史记录、复杂设置等全部让位于现场体验。</p></div>
+            </div>
+            <div class="decision">
+              <span class="dn">03</span>
+              <div><b>失败路径也是产品</b><p>AI 超时或识别失败时，给明确反馈并切换到可用结果，而不是空白或报错。</p></div>
+            </div>
+          </div>
+
+          <div class="outcome">
+            <h3>结果</h3>
+            <p>48 小时完成可演示的 Web MVP，覆盖识酒、调酒、配菜、酒局 4 段流程，并沉淀 MVP 需求书、部署文档与 GitHub 仓库。</p>
+            <div class="chips">
+              <span class="chip">48 小时</span><span class="chip">2 人团队</span><span class="chip">4 段流程</span><span class="chip">GitHub 开源</span>
+            </div>
+          </div>
+
+          <div class="reflection">
+            <h3>复盘</h3>
+            <p>黑客松教会我的不是「做得快」，而是「先决定不做什么」。如果重来，我会更早把「识酒准确率」的预期管理写进界面。</p>
+          </div>
+
+          <div class="case-links">
+            <a class="btn small" href="https://github.com/Canky508/LIngruiz1hejiu" target="_blank" rel="noopener">GitHub 仓库 <span class="arw">↗</span></a>
+            <a class="btn ghost small" href="#jinling-gallery">看演示界面</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-head reveal" id="jinling-gallery">
+        <div><h3>48 小时做出来的演示链路</h3><p>从一张酒标照片，到一张可以发出去的酒局邀请。</p></div>
+        <div class="gallery-nav"><button class="icon-btn" type="button" data-scroll="-1" aria-label="向左看">←</button><button class="icon-btn" type="button" data-scroll="1" aria-label="向右看">→</button></div>
+      </div>
+      <div class="gallery reveal" data-gallery>
+        <figure class="shot"><div class="frame device"><span class="zoom-hint">＋</span><img src="assets/jl-home.webp" alt="金灵酒鬼首页" loading="lazy"></div><figcaption><b>首页</b> 拍一瓶酒，开始识酒</figcaption></figure>
+        <figure class="shot"><div class="frame device"><span class="zoom-hint">＋</span><img src="assets/jl-wine.webp" alt="金灵酒鬼识酒结果页" loading="lazy"></div><figcaption><b>识酒</b> 酒款信息、参考价与下一步</figcaption></figure>
+        <figure class="shot"><div class="frame device"><span class="zoom-hint">＋</span><img src="assets/jl-food.webp" alt="金灵酒鬼下酒菜页" loading="lazy"></div><figcaption><b>配菜</b> 三档下酒菜与搭配理由</figcaption></figure>
+        <figure class="shot"><div class="frame device"><span class="zoom-hint">＋</span><img src="assets/jl-share.webp" alt="金灵酒鬼酒局邀请页" loading="lazy"></div><figcaption><b>组局</b> 一键生成酒局邀请卡</figcaption></figure>
+      </div>
+    </div>
+  </article>
+
+  <!-- ================= about / contact ================= -->
+  <section class="ability" id="about">
+    <div class="wrap ability-grid">
+      <div class="reveal">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2 class="section-title">想清楚，<br>再把它推上线。</h2>
+        <p class="lead">南京大学企业管理硕士在读，本科工商管理。做过用户研究、写过需求、画过原型，也跟开发一起排查真机问题、准备上架材料。我习惯把「为什么做」和「怎么验证」一起讲清楚。</p>
+        <div class="tools">
+          <span>用户访谈</span><span>问卷</span><span>竞品分析</span><span>MVP 范围</span><span>信息架构</span><span>交互原型</span><span>AI 协作</span><span>真机验收</span><span>上架材料</span>
+        </div>
+      </div>
+      <div class="skills reveal">
+        <div class="skill"><b>用户研究</b><span>哒乐星需求调研、漫画学雅思考生定位；从场景拆解到需求收敛。</span></div>
+        <div class="skill"><b>产品规划</b><span>MVP 范围、版本拆解、12 条 ADR；把「不做什么」写进文档。</span></div>
+        <div class="skill"><b>交互与原型</b><span>4 个产品原型：Web、小程序、App；从低保真到可点原型。</span></div>
+        <div class="skill"><b>AI 应用</b><span>提示词、人格设定、失败降级；用 AI 加速调研、原型与开发。</span></div>
+        <div class="skill"><b>落地协作</b><span>安卓上架、软著 / 备案、真机验收、跨角色推进。</span></div>
+        <div class="skill"><b>数据与运营</b><span>2,000+ 用户产品的渠道素材、推广与复盘。</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">LET'S TALK</p>
+        <h2>如果你在找一个<br>既能把问题想清楚、<br>又能把它<span class="mark">推上线</span><br class="mob-only">的产品经理。</h2>
+        <p>我们可以聊聊。欢迎扫码看这一页，或直接邮件联系我；完整简历、项目文档和过程稿都可以另外发送。</p>
+        <div class="contact-actions">
+          <a class="btn" href="mailto:TQQ14706849844@163.com?subject=%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%B2%97%E4%BD%8D%E6%B2%9F%E9%80%9A">发邮件给我 <span class="arw">↗</span></a>
+          <button class="btn ghost" type="button" data-qr>扫码保存这一页</button>
+        </div>
+        <div class="contact-info">
+          <span>TQQ14706849844@163.com</span>
+          <span>南京大学 · 企业管理硕士在读</span>
+          <span>求职方向：产品经理 / AI 产品经理</span>
+        </div>
+      </div>
+      <div class="contact-card reveal">
+        <img src="assets/qr-site.svg" alt="谭倩琪产品作品集二维码">
+        <b>谭倩琪 · 产品作品集</b>
+        <small>扫码打开，适合面试现场展示<br>也可以保存到简历或邮件签名</small>
+        <button class="btn ghost small copy" type="button" data-copy>复制链接</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>© <span id="year">2026</span> 谭倩琪 · 个人求职作品集</span>
+    <span>产品截图与素材版权归各项目所有 · 本页仅供求职展示 · <a href="#top">回到顶部 ↑</a></span>
+  </div>
+</footer>
+
+<!-- 移动端导航 -->
+<div class="overlay" id="menuOverlay" aria-hidden="true">
+  <div class="qr-modal" role="dialog" aria-modal="true" aria-label="页面导航" style="text-align:left">
+    <h3 style="margin-bottom:16px">去哪里？</h3>
+    <div style="display:grid;gap:2px">
+      <a href="#starfun" style="padding:12px 0;border-bottom:1px solid var(--line);font-size:14px">01 哒乐星 StarFun <span style="float:right;color:var(--muted)">↘</span></a>
+      <a href="#nuola" style="padding:12px 0;border-bottom:1px solid var(--line);font-size:14px">02 挪啦 <span style="float:right;color:var(--muted)">↘</span></a>
+      <a href="#yaya" style="padding:12px 0;border-bottom:1px solid var(--line);font-size:14px">03 漫画学雅思 <span style="float:right;color:var(--muted)">↘</span></a>
+      <a href="#jinling" style="padding:12px 0;border-bottom:1px solid var(--line);font-size:14px">04 金灵酒鬼 <span style="float:right;color:var(--muted)">↘</span></a>
+      <a href="#about" style="padding:12px 0;border-bottom:1px solid var(--line);font-size:14px">关于我 <span style="float:right;color:var(--muted)">↘</span></a>
+      <a href="mailto:TQQ14706849844@163.com" style="padding:12px 0;font-size:14px">邮件联系 <span style="float:right;color:var(--muted)">↗</span></a>
+    </div>
+    <button class="icon-btn" type="button" data-close style="position:absolute;top:14px;right:14px">✕</button>
+  </div>
+</div>
+
+<!-- 二维码弹窗 -->
+<div class="overlay" id="qrOverlay" aria-hidden="true">
+  <div class="qr-modal" role="dialog" aria-modal="true" aria-label="本页二维码">
+    <img src="assets/qr-site.svg" alt="谭倩琪产品作品集二维码">
+    <h3>扫码打开作品集</h3>
+    <p>面试现场可以直接扫码；也可以保存图片，放进简历或邮件签名。</p>
+    <button class="btn small copy" type="button" data-copy>复制链接</button>
+    <button class="icon-btn" type="button" data-close style="position:absolute;top:12px;right:12px" aria-label="关闭">✕</button>
+  </div>
+</div>
+
+<!-- 图片灯箱 -->
+<div class="overlay" id="lightbox" aria-hidden="true">
+  <button class="close" type="button" data-close aria-label="关闭">✕</button>
+  <button class="lb-nav prev" type="button" id="lbPrev" aria-label="上一张">←</button>
+  <div class="lightbox-inner">
+    <img id="lbImg" src="" alt="">
+    <div class="lightbox-cap" id="lbCap"></div>
+  </div>
+  <button class="lb-nav next" type="button" id="lbNext" aria-label="下一张">→</button>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  var PAGE_URL = 'https://canky508.github.io/pm-portfolio/';
+  var $ = function(s, r){ return (r||document).querySelector(s); };
+  var $$ = function(s, r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); };
+
+  /* year */
+  var y = $('#year'); if(y) y.textContent = new Date().getFullYear();
+
+  /* progress + topbar */
+  var progress = $('#progress'), topbar = $('#topbar');
+  function onScroll(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    var p = max > 0 ? h.scrollTop / max : 0;
+    if(progress) progress.style.width = (p*100).toFixed(2)+'%';
+    if(topbar) topbar.classList.toggle('scrolled', h.scrollTop > 10);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* reveal */
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    $$('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    $$('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* active nav */
+  var navLinks = $$('[data-nav]');
+  var sections = navLinks.map(function(a){ return document.getElementById(a.getAttribute('data-nav')); }).filter(Boolean);
+  if('IntersectionObserver' in window){
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(!e.isIntersecting) return;
+        navLinks.forEach(function(a){ a.classList.toggle('active', a.getAttribute('data-nav') === e.target.id); });
+      });
+    },{rootMargin:'-45% 0px -50% 0px',threshold:0});
+    sections.forEach(function(s){ spy.observe(s); });
+  }
+
+  /* toast */
+  var toastTimer;
+  function toast(msg){
+    var t = $('#toast'); if(!t) return;
+    t.textContent = msg; t.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function(){ t.classList.remove('show'); }, 1800);
+  }
+
+  /* copy */
+  function copyLink(){
+    var done = function(){ toast('链接已复制'); };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(PAGE_URL).then(done).catch(fallback);
+    } else fallback();
+    function fallback(){
+      var ta = document.createElement('textarea');
+      ta.value = PAGE_URL; ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select();
+      try{ document.execCommand('copy'); done(); }catch(e){ prompt('复制这个链接：', PAGE_URL); }
+      document.body.removeChild(ta);
+    }
+  }
+  $$('[data-copy]').forEach(function(b){ b.addEventListener('click', copyLink); });
+
+  /* overlays */
+  function openOverlay(el){
+    if(!el) return;
+    el.classList.add('open'); el.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeOverlays(){
+    $$('.overlay.open').forEach(function(el){ el.classList.remove('open'); el.setAttribute('aria-hidden','true'); });
+    document.body.style.overflow = '';
+  }
+  $$('[data-qr]').forEach(function(b){ b.addEventListener('click', function(){ openOverlay($('#qrOverlay')); }); });
+  $$('[data-close]').forEach(function(b){ b.addEventListener('click', closeOverlays); });
+  $$('.overlay').forEach(function(el){
+    el.addEventListener('click', function(e){ if(e.target === el) closeOverlays(); });
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeOverlays(); });
+
+  /* mobile menu */
+  var menuBtn = $('#menuBtn');
+  if(menuBtn){
+    menuBtn.addEventListener('click', function(){
+      var open = $('#menuOverlay').classList.contains('open');
+      if(open) closeOverlays(); else openOverlay($('#menuOverlay'));
+      menuBtn.setAttribute('aria-expanded', String(!open));
+    });
+    $$('#menuOverlay a').forEach(function(a){ a.addEventListener('click', closeOverlays); });
+  }
+
+  /* gallery scroll buttons */
+  $$('[data-scroll]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var head = btn.closest('.gallery-head');
+      var gallery = head ? head.nextElementSibling : null;
+      if(!gallery || !gallery.hasAttribute('data-gallery')) return;
+      var step = Math.max(220, gallery.clientWidth * .6);
+      gallery.scrollBy({left: step * Number(btn.getAttribute('data-scroll')), behavior:'smooth'});
+    });
+  });
+
+  /* lightbox */
+  var lbImgs = [], lbCaps = [], lbIndex = 0;
+  $$('[data-gallery] .shot').forEach(function(shot){
+    var img = shot.querySelector('img');
+    var cap = shot.querySelector('figcaption');
+    if(!img) return;
+    shot.addEventListener('click', function(){
+      lbImgs = $$('[data-gallery] .shot img').map(function(i){ return {src:i.currentSrc||i.src, alt:i.alt}; });
+      lbCaps = $$('[data-gallery] .shot figcaption').map(function(f){ return f.textContent.trim(); });
+      var all = $$('[data-gallery] .shot img');
+      lbIndex = all.indexOf(img);
+      showLb();
+      openOverlay($('#lightbox'));
+    });
+  });
+  function showLb(){
+    var item = lbImgs[lbIndex]; if(!item) return;
+    var im = $('#lbImg'); im.src = item.src; im.alt = item.alt || '';
+    $('#lbCap').textContent = lbCaps[lbIndex] || '';
+  }
+  $('#lbPrev') && $('#lbPrev').addEventListener('click', function(e){ e.stopPropagation(); lbIndex = (lbIndex - 1 + lbImgs.length) % lbImgs.length; showLb(); });
+  $('#lbNext') && $('#lbNext').addEventListener('click', function(e){ e.stopPropagation(); lbIndex = (lbIndex + 1) % lbImgs.length; showLb(); });
+  document.addEventListener('keydown', function(e){
+    if(!$('#lightbox').classList.contains('open')) return;
+    if(e.key === 'ArrowLeft'){ lbIndex = (lbIndex - 1 + lbImgs.length) % lbImgs.length; showLb(); }
+    if(e.key === 'ArrowRight'){ lbIndex = (lbIndex + 1) % lbImgs.length; showLb(); }
+  });
+
+  /* hash landing: open demo links in new tab already; nothing else */
+})();
+</script>
+</body>
+</html>

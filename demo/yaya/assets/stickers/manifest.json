@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "hello-book",
+    "file": "01-hello-book.svg",
+    "w": 933,
+    "h": 837,
+    "bytes": 98444
+  },
+  {
+    "slug": "applause",
+    "file": "02-applause.svg",
+    "w": 942,
+    "h": 813,
+    "bytes": 79363
+  },
+  {
+    "slug": "reading-heart",
+    "file": "03-reading-heart.svg",
+    "w": 810,
+    "h": 792,
+    "bytes": 90139
+  },
+  {
+    "slug": "hello",
+    "file": "04-hello.svg",
+    "w": 1011,
+    "h": 804,
+    "bytes": 81414
+  },
+  {
+    "slug": "tutor",
+    "file": "05-tutor.svg",
+    "w": 966,
+    "h": 885,
+    "bytes": 154587
+  },
+  {
+    "slug": "clap",
+    "file": "06-clap.svg",
+    "w": 846,
+    "h": 804,
+    "bytes": 77644
+  },
+  {
+    "slug": "peek",
+    "file": "07-peek.svg",
+    "w": 846,
+    "h": 717,
+    "bytes": 54515
+  },
+  {
+    "slug": "jump",
+    "file": "08-jump.svg",
+    "w": 1044,
+    "h": 948,
+    "bytes": 79242
+  },
+  {
+    "slug": "milestone",
+    "file": "09-milestone.svg",
+    "w": 804,
+    "h": 1014,
+    "bytes": 88498
+  },
+  {
+    "slug": "thumbs-up",
+    "file": "10-thumbs-up.svg",
+    "w": 897,
+    "h": 804,
+    "bytes": 71060
+  },
+  {
+    "slug": "sleep",
+    "file": "11-sleep.svg",
+    "w": 843,
+    "h": 834,
+    "bytes": 88072
+  },
+  {
+    "slug": "rest",
+    "file": "12-rest.svg",
+    "w": 918,
+    "h": 798,
+    "bytes": 72526
+  },
+  {
+    "slug": "thinking",
+    "file": "13-thinking.svg",
+    "w": 867,
+    "h": 810,
+    "bytes": 137356
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "file": "01-hello-book.png",
+    "w": 311,
+    "h": 279
+  },
+  {
+    "file": "02-applause.png",
+    "w": 314,
+    "h": 271
+  },
+  {
+    "file": "03-reading-heart.png",
+    "w": 270,
+    "h": 264
+  },
+  {
+    "file": "04-hello.png",
+    "w": 337,
+    "h": 268
+  },
+  {
+    "file": "05-tutor.png",
+    "w": 322,
+    "h": 295
+  },
+  {
+    "file": "06-clap.png",
+    "w": 282,
+    "h": 268
+  },
+  {
+    "file": "07-peek.png",
+    "w": 282,
+    "h": 239
+  },
+  {
+    "file": "08-jump.png",
+    "w": 348,
+    "h": 316
+  },
+  {
+    "file": "09-milestone.png",
+    "w": 268,
+    "h": 338
+  },
+  {
+    "file": "10-thumbs-up.png",
+    "w": 299,
+    "h": 268
+  },
+  {
+    "file": "11-sleep.png",
+    "w": 281,
+    "h": 278
+  },
+  {
+    "file": "12-rest.png",
+    "w": 306,
+    "h": 266
+  },
+  {
+    "file": "13-thinking.png",
+    "w": 289,
+    "h": 270
+  }
+]

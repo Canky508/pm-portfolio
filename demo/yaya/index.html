@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff9ee">
+  <title>芽芽 · 漫画学雅思｜交互原型</title>
+  <link rel="icon" href="assets/yaya-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mascot.css">
+  <link rel="stylesheet" href="preview.css">
+</head>
+<body>
+<a class="back-link" href="../../">← 返回作品集</a>
+  <div class="studio">
+    <aside class="rail">
+      <a class="brand" href="#home"><img src="assets/yaya-icon.png" alt="芽芽猫咪"><span>芽芽<span class="brand-sub">漫画学雅思</span></span></a>
+      <div class="eyebrow">INTERACTIVE PROTOTYPE / 02</div>
+      <h1>让故事，<br>成为记忆的线索<span class="yellow">。</span></h1>
+      <p class="rail-intro">在真实语境里读懂英文，<br>再把理解带进雅思阅读。</p>
+      <div class="nav-label">体验学习旅程</div>
+      <nav id="studio-nav" aria-label="原型页面导览"></nav>
+      <div class="rail-bottom"><span class="live-dot"></span> 本地交互原型 <span>v0.2</span></div>
+    </aside>
+    <main class="preview-area">
+      <div class="preview-caption"><span>芽芽 · MOBILE PREVIEW</span><span>390 × 自适应</span></div>
+      <div class="phone" id="phone">
+        <div class="statusbar"><span>9:41</span><span class="status-icons">▮▮▮ <span>◔</span> ▰</span></div>
+        <div id="app" class="app"></div>
+        <div id="overlay" class="overlay" hidden></div>
+        <div id="toast" class="toast" role="status"></div>
+        <div class="home-indicator"></div>
+      </div>
+      <p class="preview-foot">不是多背一个单词，而是多读懂一个故事。</p>
+    </main>
+    <aside class="inspector">
+      <div class="eyebrow">DESIGN NOTES</div>
+      <h2 id="note-title"></h2>
+      <p id="note-desc"></p>
+      <div id="note-actions" class="note-actions"></div>
+      <div class="palette"><i style="background:#242424"></i><i style="background:#ffca60"></i><i style="background:#fff9ee"></i><i style="background:#e8e2d6"></i></div>
+      <div class="palette-caption">墨黑 · 芽芽黄 · 奶油白 · 暖灰</div>
+      <div class="note-card"><span>关于这个版本</span><p>真实可点的前端原型，无需登录。课程仅含 1 个表达的完整训练样例；AI 为预设教研解释，配音使用浏览器语音，不调用在线服务。</p></div>
+      <button class="text-button reset-demo" id="reset-demo">重置本地学习记录 ↻</button>
+      
+    </aside>
+  </div>
+  <script src="mascot-app.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
