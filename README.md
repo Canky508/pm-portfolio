@@ -22,7 +22,7 @@ npx serve .
 ## 页面结构
 
 - `index.html`：作品集主页面（内联 CSS / JS，零依赖）
-- `demo/yaya/`：漫画学雅思可交互原型（来自 `comic-ielts` 仓库的 `design/preview`）
+- `demo/yaya/`：漫画学雅思可交互原型（来自漫画学雅思项目的交互原型）
 - `demo/starfun/`：哒乐星交互原型（来自 `starfun-app` 的 `docs/design/forest/prototype`，已去掉右侧说明面板，只保留主题切换与操作按钮）
 - `assets/`：截图、图标与二维码
 - `assets/qr-site.svg` / `qr-site.png`：指向线上地址的二维码
