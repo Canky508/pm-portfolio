@@ -112,7 +112,7 @@
     background:#fff;border:1px solid var(--line-soft);border-radius:20px;padding:16px;
     box-shadow:0 18px 50px rgba(39,32,20,.08);text-align:center;
   }
-  .qr-card img{width:100%;max-width:148px;margin:0 auto 10px;border-radius:6px}
+  .qr-card img{width:100%;max-width:170px;margin:0 auto 10px;border-radius:6px}
   .qr-card b{display:block;font-size:13px;letter-spacing:.02em}
   .qr-card small{display:block;font-size:10.5px;color:var(--muted);margin-top:4px;line-height:1.6}
   .qr-card .copy{width:100%;margin-top:10px}
@@ -946,7 +946,10 @@
     <img src="assets/qr-site.svg" alt="谭倩琪产品作品集二维码">
     <h3>扫码打开作品集</h3>
     <p>面试现场可以直接扫码；也可以保存图片，放进简历或邮件签名。</p>
-    <button class="btn small copy" type="button" data-copy>复制链接</button>
+    <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+      <button class="btn small copy" type="button" data-copy>复制链接</button>
+      <a class="btn ghost small" href="assets/qr-site.png" download="谭倩琪-产品作品集二维码.png">保存二维码</a>
+    </div>
     <button class="icon-btn" type="button" data-close style="position:absolute;top:12px;right:12px" aria-label="关闭">✕</button>
   </div>
 </div>
